@@ -42,10 +42,20 @@ export function generateRichText(plugin: PluginItems, type: "author" | "descript
 			type: "url",
 			url: `https://github.com/${plugin.repo}`
 		} as PropertyURL;
-	} else if (type === "funding") {
+	} else if (type === "funding" && plugin.fundingUrl) {
 		return {
 			type: "url",
 			url: plugin.fundingUrl || ""
 		} as PropertyURL;
 	}
+}
+
+export function generateMobileTag(plugin: PluginItems) {
+	if (!plugin.isDesktopOnly) {
+		return [{
+			name: "mobile",
+			color: "green"
+		}];
+	}
+	return [];
 }
