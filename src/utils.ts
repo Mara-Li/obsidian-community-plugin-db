@@ -1,6 +1,6 @@
 import { PluginItems, PropertyURL, RichText } from "./interface";
 
-export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name") {
+export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding") {
 	if (type === "author") {
 		return {
 			type: "rich_text",
@@ -41,6 +41,11 @@ export function generateRichText(plugin: PluginItems, type: "author" | "descript
 		return {
 			type: "url",
 			url: `https://github.com/${plugin.repo}`
+		} as PropertyURL;
+	} else if (type === "funding") {
+		return {
+			type: "url",
+			url: plugin.fundingUrl || ""
 		} as PropertyURL;
 	}
 }

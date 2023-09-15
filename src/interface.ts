@@ -4,6 +4,8 @@ export interface PluginItems {
   description: string;
   repo: string;
   author: string;
+  fundingUrl?: string;
+  isDesktopOnly?: string;
 }
 
 export interface RichText {
@@ -21,10 +23,17 @@ export interface PropertyURL {
   url: string;
 }
 
+type MultiSelect = {
+  id?: string;
+  name: string;
+  color?: string;
+};
 
 export interface UpdateProperty {
   "Author" : RichText,
   "Description" : RichText,
   "Name" : RichText,
-  "Repository" : PropertyURL
+  "Repository" : PropertyURL,
+  "Funding" : PropertyURL,
+  "Tags" : MultiSelect[]
 }

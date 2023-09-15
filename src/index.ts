@@ -14,10 +14,18 @@ config();
  * Use HTTPS request to get raw JSON data from github raw.url
  * @returns {Promise<PluginItems[]>} - Array of plugin items
  */
-async function getRawData() {
+async function getRawData(length?: number) {
 	const url = "https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugins.json";
 	const content = await fetch(url);
-	const data = await content.json();
+	let data = await content.json() as PluginItems[];
+	if (length) {
+		data = data.slice(0, length);
+	}
+	for (const plugin of data) {
+		const manifest = await getManifestOfPlugin(plugin);
+		plugin.isDesktopOnly = manifest.isDesktopOnly || false;
+		plugin.fundingUrl = manifest.fundingUrl || "";
+	}
 	return data as PluginItems[];
 }
 
@@ -27,13 +35,13 @@ async function getRawData() {
  * @returns string | undefined : The page ID if exists
 */
 async function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: QueryDatabaseResponse[]) {
-	console.log(chalk.blueBright.italic("• ") + chalk.blueBright.italic.underline(`Looking for ${plugin.name} (${plugin.id}) in the database...`));
+	console.log(chalk.blueBright.italic("• ") + chalk.blueBright.italic.underline(`Looking for ${plugin.name} (${chalk.underline(plugin.id)}) in the database...`));
 	//search all response
 	for (const response of allResponse) {
 		//search all results
 		for (const result of response.results) {
 			//@ts-ignore
-			if (result.properties.ID.title[0].text.content === plugin.id) {
+			if (result.properties.ID.title[0]?.text.content === plugin.id) {
 				return result.id;
 			}
 		}
@@ -41,12 +49,34 @@ async function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: Que
 	return undefined;
 }
 
+async function getManifestOfPlugin(plugin: PluginItems) {
+	try {
+		const manifest = await fetch(`https://raw.githubusercontent.com/${plugin.repo}/master/manifest.json`);
+		return await manifest.json();
+	} catch (error) {
+		const manifest = await fetch(`https://raw.githubusercontent.com/${plugin.repo}/main/manifest.json`);
+		return await manifest.json();
+	}
+}
+
+function generateMobileTag(plugin: PluginItems) {
+	if (!plugin.isDesktopOnly) {
+		return [{
+			name: "mobile",
+			color: "green"
+		}];
+	}
+	return [];
+}
+
+
 /**
  * If the plugin is not in the database, add it in.
  * @param plugin {PluginItems}
  * @param database {QueryDatabaseResponse}
  */
 async function addNewEntry(plugin: PluginItems, notion: Client) {
+	const mobileTag = generateMobileTag(plugin);
 	const bodyParameters: CreatePageParameters = {
 		parent: {
 			database_id: process.env.NOTION_DATABASE_ID || "",
@@ -99,9 +129,14 @@ async function addNewEntry(plugin: PluginItems, notion: Client) {
 				type: "url",
 				url: `https://github.com/${plugin.repo}`
 			},
+			"Funding URL": {
+				type: "url",
+				url: plugin.fundingUrl || ""
+			},
 			"Tags": {
 				type: "multi_select",
-				"multi_select": []
+				//eslint-disable-next-line
+				"multi_select": mobileTag as any,
 			},
 			"Notes": {
 				type: "rich_text",
@@ -110,7 +145,7 @@ async function addNewEntry(plugin: PluginItems, notion: Client) {
 		}
 	};
 	await notion.pages.create(bodyParameters);
-	console.log(chalk.green(`Entry for ${plugin.name} (${plugin.id}) has been added to the database.`));
+	console.log(chalk.green(`Entry for ${plugin.name} (${chalk.underline(plugin.id)}) has been added to the database.`));
 }
 
 function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string) {
@@ -122,6 +157,21 @@ function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string)
 		}
 	}
 	return undefined;
+}
+
+//eslint-disable-next-line
+function searchTagsInMultiSelect(tags: any, plugin: PluginItems):"remove" | "add" | "none" {
+	for (const tag of tags.multi_select) {
+		if (tag.name === "mobile" && plugin.isDesktopOnly) { //need to remove mobile tag
+			return "remove";
+		} else if (tag.name === "mobile" && !plugin.isDesktopOnly) { 
+			return "none";
+		}
+	}
+	if (!plugin.isDesktopOnly) {
+		return "add";
+	} 
+	return "none";
 }
 
 /**
@@ -147,7 +197,9 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 		description: page.properties.Description.rich_text[0].plain_text,
 		//@ts-ignore
 		repo: page.properties.Repository.url.replace("https://github.com/", ""),
-		id: plugin.id
+		id: plugin.id,
+		fundingUrl: plugin.fundingUrl,
+		isDesktopOnly: plugin.isDesktopOnly
 	};
 
 	const actualPageProperty: UpdateProperty = {
@@ -158,8 +210,13 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 		//@ts-ignore
 		"Name": page.properties.Name,
 		//@ts-ignore
-		"Repository": page.properties.Repository
+		"Repository": page.properties.Repository,
+		//@ts-ignore
+		"Funding": page.properties.Funding,
+		//@ts-ignore
+		Tags: page.properties.Tags
 	};
+
 
 	let toUpdate = false;
 	if (pageProperty.author !== plugin.author) {
@@ -182,14 +239,35 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${pageProperty.repo} !== ${plugin.repo}`));
 	}
+	if (pageProperty.fundingUrl !== plugin.fundingUrl) {
+		actualPageProperty.Funding = generateRichText(plugin, "funding") as PropertyURL;
+		toUpdate = true;
+		console.log(chalk.red(`Mismatch: ${pageProperty.fundingUrl} !== ${plugin.fundingUrl}`));
+	}
+	if (searchTagsInMultiSelect(actualPageProperty.Tags, plugin) === "add") { 
+		const mobile = generateMobileTag(plugin);
+		//@ts-ignore
+		actualPageProperty.Tags.multi_select.push(...mobile);
+		toUpdate = true;
+		console.log(chalk.red("Mismatch: #mobile tag is missing."));
+	} else if (searchTagsInMultiSelect(actualPageProperty.Tags, plugin) === "remove") {
+		//remove mobile tag
+		//@ts-ignore
+		//eslint-disable-next-line
+		actualPageProperty.Tags.multi_select = actualPageProperty.Tags.multi_select.filter((tag: any) => tag.name !== "mobile");
+		toUpdate = true;
+		console.log(chalk.red("Mismatch: #mobile tag must be removed."));
+	}
+
 	if (toUpdate) {
 		await notion.pages.update({
 			page_id: pageID,
 			//eslint-disable-next-line
 			properties: actualPageProperty as any,
 		});
+		console.log(chalk.cyanBright(`✓ ${plugin.name} (${chalk.underline(plugin.id)}) updated!`));
 	} else {
-		console.log(chalk.grey(`${plugin.name} (${plugin.id}) doesn't need to be updated!`));
+		console.log(chalk.grey.italic(`${plugin.name} (${chalk.underline(plugin.id)}) doesn't need to be updated!`));
 	}
 }
 
@@ -218,14 +296,16 @@ async function main() {
 		chalk.green(`Database fetched! ${allResponse.length} pages found in the database.`)
 	);
 	console.log();
+	spinner.start(chalk.yellow("Fetching plugins list..."));
 	const allPlugins = await getRawData();
+	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
 	for (const plugin of allPlugins) {
 		const pageID = await verifyIfPluginAlreadyExists(plugin, allResponse);
 		if (pageID) {
-			console.log(chalk.green(`Entry for ${plugin.name} (${plugin.id}) already exists in the database.`));
+			console.log(chalk.grey.italic(`Entry for ${plugin.name} (${chalk.underline(plugin.id)}) already exists in the database.`));
 			await updateOldEntry(plugin, allResponse, pageID, notion);
 		} else {
-			console.log(chalk.red(`Entry for ${plugin.name} (${plugin.id}) doesn't exist in the database.`));
+			console.log(chalk.red(`Entry for ${plugin.name} (${chalk.underline(plugin.id)}) doesn't exist in the database.`));
 			await addNewEntry(plugin, notion);
 		}
 	}
