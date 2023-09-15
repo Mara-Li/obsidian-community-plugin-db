@@ -2,6 +2,7 @@ import { Client } from "@notionhq/client";
 import { CreatePageParameters, QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 import chalk from "chalk";
 import { config } from "dotenv";
+import ora from "ora";
 
 import { PluginItems, PropertyURL, RichText, UpdateProperty } from "./interface";
 import { generateRichText } from "./utils";
@@ -25,13 +26,19 @@ async function getRawData() {
  * @param plugin {PluginItems} - The plugin to check 
  * @returns string | undefined : The page ID if exists
 */
-async function verifyIfPluginAlreadyExists(plugin: PluginItems, response: QueryDatabaseResponse) {
-	console.log(chalk.black.underline(`Looking for ${plugin.name} (${plugin.id}) in the database...`));
-	//@ts-ignore
-	return response.results.find((item) => {
-		//@ts-ignore
-		return item.properties.ID.title[0].plain_text == plugin.id;
-	})?.id ?? undefined;
+async function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: QueryDatabaseResponse[]) {
+	console.log(chalk.black("• ") + chalk.black.underline(`Looking for ${plugin.name} (${plugin.id}) in the database...`));
+	//search all response
+	for (const response of allResponse) {
+		//search all results
+		for (const result of response.results) {
+			//@ts-ignore
+			if (result.properties.ID.title[0].text.content === plugin.id) {
+				return result.id;
+			}
+		}
+	}
+	return undefined;
 }
 
 /**
@@ -106,17 +113,30 @@ async function addNewEntry(plugin: PluginItems, notion: Client) {
 	console.log(chalk.green(`Entry for ${plugin.name} (${plugin.id}) has been added to the database.`));
 }
 
+function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string) {
+	for (const response of database) {
+		for (const result of response.results) {
+			if (result.id === pageID) {
+				return result;
+			}
+		}
+	}
+	return undefined;
+}
+
 /**
  * If a plugin already exist in the DB, compare all entry. If one of the entry content is different, update the page
  * @param plugin {PluginItems}
  * @param notion {Client}
  */
-async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseResponse, pageID: string, notion: Client) {
+async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseResponse[], pageID: string, notion: Client) {
 	//verify property of pageID
 	//get page_id in DB
-	const page = database.results.find((item) => {
-		return item.id === pageID;
-	});
+	const page = searchPageInDatabase(database, pageID);
+	if (!page) {
+		console.log(chalk.red(`Error: pageID ${pageID} doesn't exist in the database.`));
+		return;
+	}
 	//create pageProperty as PluginItems
 	const pageProperty: PluginItems = {
 		//@ts-ignore
@@ -130,7 +150,7 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 		id: plugin.id
 	};
 
-	const properties: UpdateProperty = {
+	const actualPageProperty: UpdateProperty = {
 		//@ts-ignore
 		"Author": page.properties.Author,
 		//@ts-ignore
@@ -143,22 +163,22 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 
 	let toUpdate = false;
 	if (pageProperty.author !== plugin.author) {
-		properties.Author = generateRichText(plugin, "author") as RichText;
+		actualPageProperty.Author = generateRichText(plugin, "author") as RichText;
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch : ${pageProperty.author} !== ${plugin.author}`));
 	}
 	if (pageProperty.description !== plugin.description) {
-		properties.Description = generateRichText(plugin, "description") as RichText;
+		actualPageProperty.Description = generateRichText(plugin, "description") as RichText;
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${pageProperty.description} !== ${plugin.author}`));
 	}
 	if (pageProperty.name !== plugin.name) {
-		properties.Name = generateRichText(plugin, "name") as RichText;
+		actualPageProperty.Name = generateRichText(plugin, "name") as RichText;
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${pageProperty.name} !== ${plugin.name}`));
 	}
 	if (pageProperty.repo !== plugin.repo) {
-		properties.Repository = generateRichText(plugin, "repo") as PropertyURL;
+		actualPageProperty.Repository = generateRichText(plugin, "repo") as PropertyURL;
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${pageProperty.repo} !== ${plugin.repo}`));
 	}
@@ -166,7 +186,7 @@ async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseRespon
 		await notion.pages.update({
 			page_id: pageID,
 			//eslint-disable-next-line
-			properties: properties as any,
+			properties: actualPageProperty as any,
 		});
 	} else {
 		console.log(chalk.grey(`${plugin.name} (${plugin.id}) doesn't need to be updated!`));
@@ -178,16 +198,34 @@ async function main() {
 		auth: process.env.NOTION_TOKEN,
 	});
 
-	const response = await notion.databases.query({
+	const spinner = ora({
+		text: chalk.yellow("Fetching database..."),
+		color: "yellow",
+	}).start();
+	let response = await notion.databases.query({
 		database_id: process.env.NOTION_DATABASE_ID || "",
 	});
+	const allResponse = [];
+	allResponse.push(response);
+	while (response.has_more) {
+		response = await notion.databases.query({
+			database_id: process.env.NOTION_DATABASE_ID || "",
+			start_cursor: response.next_cursor as string
+		});
+		allResponse.push(response);
+	}
+	spinner.succeed(
+		chalk.green(`Database fetched! ${allResponse.length} pages found in the database.`)
+	);
+	console.log();
 	const allPlugins = await getRawData();
-	for (const plugin of allPlugins.slice(0, 10)) {
-		const pageID = await verifyIfPluginAlreadyExists(plugin, response);
+	for (const plugin of allPlugins) {
+		const pageID = await verifyIfPluginAlreadyExists(plugin, allResponse);
 		if (pageID) {
-			console.log(chalk.yellow(`${plugin.name} (${plugin.id}) already exists in the DB!`));
-			await updateOldEntry(plugin, response, pageID, notion);
+			console.log(chalk.green(`Entry for ${plugin.name} (${plugin.id}) already exists in the database.`));
+			await updateOldEntry(plugin, allResponse, pageID, notion);
 		} else {
+			console.log(chalk.red(`Entry for ${plugin.name} (${plugin.id}) doesn't exist in the database.`));
 			await addNewEntry(plugin, notion);
 		}
 	}
