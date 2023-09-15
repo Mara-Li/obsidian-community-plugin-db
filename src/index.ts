@@ -27,7 +27,7 @@ async function getRawData() {
  * @returns string | undefined : The page ID if exists
 */
 async function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: QueryDatabaseResponse[]) {
-	console.log(chalk.black("• ") + chalk.black.underline(`Looking for ${plugin.name} (${plugin.id}) in the database...`));
+	console.log(chalk.blueBright.italic("• ") + chalk.blueBright.italic.underline(`Looking for ${plugin.name} (${plugin.id}) in the database...`));
 	//search all response
 	for (const response of allResponse) {
 		//search all results
