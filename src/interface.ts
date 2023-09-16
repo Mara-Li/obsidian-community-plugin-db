@@ -1,39 +1,55 @@
 export interface PluginItems {
-  id: string;
-  name: string;
-  description: string;
-  repo: string;
-  author: string;
-  fundingUrl?: string;
-  isDesktopOnly?: string;
+	id: string;
+	name: string;
+	description: string;
+	repo: string;
+	author: string;
+	fundingUrl?: string;
+	isDesktopOnly?: boolean;
 }
 
+export const TEST_PLUGIN: PluginItems = {
+	author: "mara-li",
+	id: "test",
+	name: "Test",
+	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+	repo: "test/test",
+	fundingUrl: "coucou",
+	isDesktopOnly: false,
+};
+
 export interface RichText {
-  type: string;
-  rich_text: {
-    type: string;
-    text: {
-      content: string;
-    };
-  }[];
+	type: string;
+	rich_text: {
+		type: string;
+		text: {
+			content: string;
+		};
+	}[];
 }
 
 export interface PropertyURL {
-  type: string;
-  url: string;
+	type: string;
+	url: string;
 }
 
 type MultiSelect = {
-  id?: string;
-  name: string;
-  color?: string;
+	id?: string;
+	name: string;
+	color?: string;
 };
 
 export interface UpdateProperty {
-  "Author" : RichText,
-  "Description" : RichText,
-  "Name" : RichText,
-  "Repository" : PropertyURL,
-  "Funding" : PropertyURL,
-  "Tags" : MultiSelect[]
+	"Author": RichText,
+	"Description": RichText,
+	"Name": RichText,
+	"Repository": PropertyURL,
+	"Funding": PropertyURL,
+	"Tags": MultiSelect[]
+}
+
+export interface DeletedPlugins {
+	id: string;
+	pluginID: string;
+	pluginName: string;
 }

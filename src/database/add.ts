@@ -64,23 +64,15 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 				type: "url",
 				url: `https://github.com/${plugin.repo}`
 			},
-			"Funding URL": {
+			"Funding": {
 				type: "url",
-				url: plugin.fundingUrl || ""
+				url: plugin?.fundingUrl || ""
 			},
 			"Tags": {
 				type: "multi_select",
 				//eslint-disable-next-line
 				"multi_select": mobileTag as any,
 			},
-			"Repository status" : {
-				type: "select",
-				"select": null
-			},
-			"Notes": {
-				type: "rich_text",
-				rich_text: []
-			}
 		}
 	};
 	await notion.pages.create(bodyParameters);

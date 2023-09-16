@@ -1,7 +1,7 @@
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 import chalk from "chalk";
 
-import { PluginItems } from "../interface";
+import { DeletedPlugins, PluginItems } from "../interface";
 
 export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string) {
 	for (const response of database) {
@@ -29,12 +29,12 @@ export function searchTagsInMultiSelect(tags: any, plugin: PluginItems): "remove
 	return "none";
 }
 
-/** 
- * Verify if a plugin is already in the DB 
- * @param plugin {PluginItems} - The plugin to check 
+/**
+ * Verify if a plugin is already in the DB
+ * @param plugin {PluginItems} - The plugin to check
  * @returns string | undefined : The page ID if exists
 */
-export async function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: QueryDatabaseResponse[]) {
+export function verifyIfPluginAlreadyExists(plugin: PluginItems, allResponse: QueryDatabaseResponse[]) {
 	console.log(chalk.blueBright.italic("• ") + chalk.blueBright.italic.underline(`Looking for ${plugin.name} (${chalk.underline(plugin.id)}) in the database...`));
 	//search all response
 	for (const response of allResponse) {
@@ -47,4 +47,31 @@ export async function verifyIfPluginAlreadyExists(plugin: PluginItems, allRespon
 		}
 	}
 	return undefined;
+}
+/**
+ * Compare plugins list and database to see if a plugin was removed from the pluginList and not from the database
+ * @param allPlugins {PluginItems[]} - The plugins to check
+ * @param allResponse {QueryDatabaseResponse[]} - The database response
+ * @returns {string | undefined}
+ */
+export function searchDeletedPlugins(allPlugins:PluginItems[], allResponse: QueryDatabaseResponse[]): DeletedPlugins[] {
+	const deletedPlugins= [];
+	for (const response of allResponse) {
+		for (const result of response.results) {
+			//@ts-ignore
+			const pluginID = result.properties.ID.title[0]?.text.content;
+			//@ts-ignore
+			const pluginName = result.properties.Name.rich_text[0]?.plain_text;
+			//@ts-ignore
+			const plugin = allPlugins.find(plugin => plugin.id === pluginID);
+			if (!plugin) {
+				deletedPlugins.push({
+					id: result.id,
+					pluginID,
+					pluginName
+				});
+			}
+		}
+	}
+	return deletedPlugins;
 }
