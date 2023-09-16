@@ -73,6 +73,10 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 				//eslint-disable-next-line
 				"multi_select": mobileTag as any,
 			},
+			"Repository status" : {
+				type: "select",
+				"select": null
+			},
 			"Notes": {
 				type: "rich_text",
 				rich_text: []
