@@ -3,7 +3,7 @@ import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints"
 import chalk from "chalk";
 
 import { PluginItems, PropertyURL, RichText, UpdateProperty } from "../interface";
-import { generateMobileTag, generateRichText } from "../utils";
+import { generateActivityTag, generateMobileTag, generateRichText, uniDate } from "../utils";
 import { searchPageInDatabase, searchTagsInMultiSelect } from "./search";
 
 /**
@@ -32,7 +32,10 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		id: plugin.id,
 		//@ts-ignore
 		fundingUrl: page.properties.Funding.url,
-		isDesktopOnly: plugin.isDesktopOnly
+		isDesktopOnly: plugin.isDesktopOnly,
+		//@ts-ignore
+		lastCommitDate: page.properties["Last commit"].date?.start ?? null,
+		repoArchived: plugin.repoArchived,
 	};
 
 	const actualPageProperty: UpdateProperty = {
@@ -47,7 +50,11 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		//@ts-ignore
 		"Funding": page.properties.Funding,
 		//@ts-ignore
-		Tags: page.properties.Tags
+		Tags: page.properties.Tags,
+		//@ts-ignore
+		"Last commit": page.properties["Last commit"],
+		//@ts-ignore
+		"Repository status": page.properties["Repository status"],
 	};
 
 	let toUpdate = false;
@@ -90,6 +97,30 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		actualPageProperty.Tags.multi_select = actualPageProperty.Tags.multi_select.filter((tag: any) => tag.name !== "mobile");
 		toUpdate = true;
 		console.log(chalk.red("Mismatch: #mobile tag must be removed."));
+	}
+	if (plugin.lastCommitDate && uniDate(pageProperty.lastCommitDate) !== uniDate(plugin.lastCommitDate)) {
+		actualPageProperty["Last commit"] = {
+			type: "date",
+			date: {
+				start: plugin.lastCommitDate.toString(),
+				end: null,
+			}
+		};
+		toUpdate = true;
+		console.log(chalk.red(`Mismatch: ${uniDate(pageProperty.lastCommitDate)} !== ${uniDate(plugin.lastCommitDate)}`));
+	}
+	const oldStatuts = generateActivityTag(pageProperty);
+	const newStatuts = generateActivityTag(plugin);
+	if (oldStatuts.name !== newStatuts.name) {
+		//@ts-ignore
+		actualPageProperty["Repository status"].select = newStatuts;
+		toUpdate = true;
+		console.log(chalk.red(`Mismatch: ${oldStatuts.name} !== ${newStatuts.name}`));
+	}
+	if (plugin.repoArchived && !pageProperty.repoArchived) {
+		actualPageProperty["Repository status"] = newStatuts;
+		toUpdate = true;
+		console.log(chalk.red(`Mismatch: ${pageProperty.repoArchived} !== ${plugin.repoArchived}`));
 	}
 
 	if (toUpdate) {

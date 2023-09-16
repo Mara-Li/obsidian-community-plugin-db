@@ -6,6 +6,8 @@ export interface PluginItems {
 	author: string;
 	fundingUrl?: string;
 	isDesktopOnly?: boolean;
+	lastCommitDate?: Date;
+	repoArchived?: boolean;
 }
 
 export const TEST_PLUGIN: PluginItems = {
@@ -45,9 +47,18 @@ export interface UpdateProperty {
 	"Name": RichText,
 	"Repository": PropertyURL,
 	"Funding": PropertyURL,
-	"Tags": MultiSelect[]
+	"Tags": MultiSelect[],
+	"Last commit" : PropertyDate,
+	"Repository status" : MultiSelect,
 }
 
+export interface PropertyDate {
+	type: string;
+	date: {
+		start: string;
+		end?: string | null;
+	};
+}
 export interface DeletedPlugins {
 	id: string;
 	pluginID: string;

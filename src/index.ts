@@ -21,12 +21,16 @@ async function main() {
 	const dev = process.env.NODE_ENV === "development";
 	const test = process.env.TEST === "true";
 
+	let maxLength: undefined | number;
+	if (dev) {
+		maxLength = 10;
+	}
 
 	const spinner = ora({
 		text: chalk.yellow("Fetching plugin list..."),
 		color: "yellow",
 	}).start();
-	const allPlugins = await getRawData();
+	const allPlugins = await getRawData(maxLength);
 	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
 	if (test) {
 		console.log(`${chalk.blueBright.italic.underline(`Adding test plugin ${TEST_PLUGIN.name} (${chalk.underline(TEST_PLUGIN.id)}) to the list...`)}\n`);
@@ -69,7 +73,7 @@ async function main() {
 	if (deletedPlugins.length > 0) {
 		spinner.succeed(chalk.green(`Found ${deletedPlugins.length} deleted plugins.`));
 		for (const plugin of deletedPlugins) {
-			console.log(chalk.redBright(`- ${plugin.pluginName} (${chalk.underline(plugin.pluginID)})`));
+			//console.log(chalk.redBright(`- ${plugin.pluginName} (${chalk.underline(plugin.pluginID)})`));
 			if (!dev)
 				await deletePageID(plugin, notion);
 		}

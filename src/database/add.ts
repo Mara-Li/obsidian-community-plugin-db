@@ -3,7 +3,7 @@ import { CreatePageParameters } from "@notionhq/client/build/src/api-endpoints";
 import chalk from "chalk";
 
 import { PluginItems } from "../interface";
-import { generateMobileTag } from "../utils";
+import { generateActivityTag, generateMobileTag } from "../utils";
 
 /**
  * If the plugin is not in the database, add it in.
@@ -72,6 +72,18 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 				type: "multi_select",
 				//eslint-disable-next-line
 				"multi_select": mobileTag as any,
+			},
+			"Last commit": {
+				type: "date",
+				date: {
+					start: plugin.lastCommitDate?.toISOString() || "",
+					end: null,
+				},
+			},
+			"Repository status" : {
+				type: "select",
+				//eslint-disable-next-line
+				select: generateActivityTag(plugin) as any,
 			},
 		}
 	};

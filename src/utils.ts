@@ -1,4 +1,8 @@
+import { format,parseISO } from "date-fns";
+
 import { PluginItems, PropertyURL, RichText } from "./interface";
+
+
 
 export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding") {
 	if (type === "author") {
@@ -58,4 +62,40 @@ export function generateMobileTag(plugin: PluginItems) {
 		}];
 	}
 	return [];
+}
+
+export function generateActivityTag(plugin: PluginItems) {
+	const archived = {
+		name: "#ARCHIVED",
+		color: "orange"
+	};
+	const active = {
+		name: "#ACTIVE",
+		color: "blue"
+	};
+	const stale = {
+		name: "#STALE",
+		color: "yellow"
+	};
+
+	if (plugin.repoArchived) {
+		return archived;
+	} else if (plugin.lastCommitDate) {
+		const lastCommitDate = new Date(plugin.lastCommitDate);
+		const today = new Date();
+		const diffTime = Math.abs(today.getTime() - lastCommitDate.getTime());
+		const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+		return diffDays > 365 ? stale : active;
+	}
+	return stale;
+}
+
+export function uniDate(date: Date | string | undefined) {
+	if (!date) {
+		return "";
+	}
+	if (typeof date === "string") {
+		date = parseISO(date);
+	}
+	return format(date, "yyyy-MM-dd'T'HH:mm");
 }

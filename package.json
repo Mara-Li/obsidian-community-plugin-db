@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "esrun src/index.ts",
     "dev": "cross-env NODE_ENV=development esrun src/index.ts",
-    "test" : "cross-env TEST=true esrun src/index.ts"
+    "test": "cross-env TEST=true esrun src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,8 @@
   "devDependencies": {
     "ansi-colors": "^4.1.3",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.3.1"
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "simple-git": "^3.19.1"
   }
 }

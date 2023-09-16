@@ -16,6 +16,8 @@ export async function getRawData(length?: number) {
 		const manifest = await getManifestOfPlugin(plugin);
 		plugin.isDesktopOnly = manifest.isDesktopOnly || false;
 		plugin.fundingUrl = typeof manifest.fundingUrl === "object" ? Object.values(manifest.fundingUrl)[0] as string : manifest.fundingUrl ?? "";
+		plugin.lastCommitDate = await getLastCommitDate(plugin);
+		plugin.repoArchived = await isArchivedRepo(plugin);
 	}
 	return data as PluginItems[];
 }
@@ -30,3 +32,14 @@ async function getManifestOfPlugin(plugin: PluginItems) {
 	}
 }
 
+async function getLastCommitDate(plugin: PluginItems) {
+	const commit = await fetch(`https://api.github.com/repos/${plugin.repo}/commits`);
+	const data = await commit.json();
+	return data[0].commit.author.date;
+}
+
+async function isArchivedRepo(plugin: PluginItems) {
+	const repo = await fetch(`https://api.github.com/repos/${plugin.repo}`);
+	const data = await repo.json();
+	return data.archived;
+}
