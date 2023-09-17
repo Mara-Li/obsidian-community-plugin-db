@@ -124,7 +124,7 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		toUpdate = true;
 		console.log(chalk.red("Mismatch: No status found"));
 	}
-	if (oldStatuts.name !== newStatuts.name) {
+	if (oldStatuts.name !== newStatuts.name && oldStatuts.name !== "#ARCHIVED") {
 		//@ts-ignore
 		actualPageProperty["Repository status"].select = newStatuts;
 		toUpdate = true;

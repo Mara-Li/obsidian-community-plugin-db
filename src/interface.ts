@@ -72,3 +72,7 @@ export interface PluginCommitDate {
 	ETAG: string;
 	commitDate: string;
 }
+export const ARCHIVED: MultiSelect = {
+	name: "#ARCHIVED",
+	color: "orange",
+};
