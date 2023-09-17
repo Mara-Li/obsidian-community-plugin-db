@@ -24,6 +24,7 @@
     "cross-env": "^7.0.3",
     "date-fns": "^2.30.0",
     "dotenv": "^16.3.1",
+    "octokit": "^3.1.0",
     "simple-git": "^3.19.1"
   }
 }

@@ -35,7 +35,9 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		isDesktopOnly: plugin.isDesktopOnly,
 		//@ts-ignore
 		lastCommitDate: page.properties["Last commit"].date?.start ?? null,
-		repoArchived: plugin.repoArchived,
+		//@ts-ignore
+		ETAG: page.properties.ETAG.rich_text[0]?.plain_text ?? null,
+
 	};
 
 	const actualPageProperty: UpdateProperty = {
@@ -55,6 +57,8 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		"Last commit": page.properties["Last commit"],
 		//@ts-ignore
 		"Repository status": page.properties["Repository status"],
+		//@ts-ignore
+		"ETAG": page.properties.ETAG,
 	};
 
 	let toUpdate = false;
@@ -102,12 +106,17 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		actualPageProperty["Last commit"] = {
 			type: "date",
 			date: {
-				start: plugin.lastCommitDate.toString(),
+				start: new Date(plugin.lastCommitDate).toISOString(),
 				end: null,
 			}
 		};
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${uniDate(pageProperty.lastCommitDate)} !== ${uniDate(plugin.lastCommitDate)}`));
+	}
+	if (plugin.ETAG && pageProperty.ETAG !== plugin.ETAG) {
+		actualPageProperty.ETAG = generateRichText(plugin, "ETAG") as RichText;
+		toUpdate = true;
+		console.log(chalk.red(`Mismatch: ${pageProperty.ETAG} !== ${plugin.ETAG}`));
 	}
 	const oldStatuts = generateActivityTag(pageProperty);
 	const newStatuts = generateActivityTag(plugin);
@@ -117,11 +126,7 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${oldStatuts.name} !== ${newStatuts.name}`));
 	}
-	if (plugin.repoArchived && !pageProperty.repoArchived) {
-		actualPageProperty["Repository status"] = newStatuts;
-		toUpdate = true;
-		console.log(chalk.red(`Mismatch: ${pageProperty.repoArchived} !== ${plugin.repoArchived}`));
-	}
+
 
 	if (toUpdate) {
 		await notion.pages.update({

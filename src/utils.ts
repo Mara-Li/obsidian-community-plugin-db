@@ -4,7 +4,7 @@ import { PluginItems, PropertyURL, RichText } from "./interface";
 
 
 
-export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding") {
+export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding" | "ETAG") {
 	if (type === "author") {
 		return {
 			type: "rich_text",
@@ -51,6 +51,18 @@ export function generateRichText(plugin: PluginItems, type: "author" | "descript
 			type: "url",
 			url: plugin.fundingUrl || ""
 		} as PropertyURL;
+	} else if (type === "ETAG") {
+		return {
+			type: "rich_text",
+			rich_text: [
+				{
+					type: "text",
+					text: {
+						content: plugin.ETAG,
+					}
+				}
+			]
+		} as RichText;
 	}
 }
 
@@ -65,10 +77,6 @@ export function generateMobileTag(plugin: PluginItems) {
 }
 
 export function generateActivityTag(plugin: PluginItems) {
-	const archived = {
-		name: "#ARCHIVED",
-		color: "orange"
-	};
 	const active = {
 		name: "#ACTIVE",
 		color: "blue"
@@ -78,9 +86,7 @@ export function generateActivityTag(plugin: PluginItems) {
 		color: "yellow"
 	};
 
-	if (plugin.repoArchived) {
-		return archived;
-	} else if (plugin.lastCommitDate) {
+	if (plugin.lastCommitDate) {
 		const lastCommitDate = new Date(plugin.lastCommitDate);
 		const today = new Date();
 		const diffTime = Math.abs(today.getTime() - lastCommitDate.getTime());

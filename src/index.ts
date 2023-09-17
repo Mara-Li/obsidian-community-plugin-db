@@ -1,20 +1,25 @@
 import { Client } from "@notionhq/client";
 import chalk from "chalk";
 import { config } from "dotenv";
+import { Octokit } from "octokit";
 import ora from "ora";
 
 import { addNewEntry } from "./database/add";
-import { searchDeletedPlugins, verifyIfPluginAlreadyExists } from "./database/search";
+import { getAllETAGByPlugins, searchDeletedPlugins, verifyIfPluginAlreadyExists } from "./database/search";
 import { updateOldEntry } from "./database/update";
 import { deletePageID } from "./delete";
 import { getRawData } from "./getPlugins";
-import { TEST_PLUGIN } from "./interface";
+import { PluginCommitDate, TEST_PLUGIN } from "./interface";
 
 
 config();
 
-
 async function main() {
+
+	const octokit = new Octokit({
+		auth: process.env.GITHUB_TOKEN_API,
+	});
+
 	const notion = new Client({
 		auth: process.env.NOTION_TOKEN,
 	});
@@ -23,21 +28,16 @@ async function main() {
 
 	let maxLength: undefined | number;
 	if (dev) {
-		maxLength = 10;
+		maxLength = 2;
 	}
 
+	//get Rate Limit
+	const rateLimit = await octokit.request("GET /rate_limit");
+	console.log(`Rate Limit: ${rateLimit.data.rate.remaining}/${rateLimit.data.rate.limit}`);
 	const spinner = ora({
-		text: chalk.yellow("Fetching plugin list..."),
+		text: chalk.yellow("Fetching database..."),
 		color: "yellow",
 	}).start();
-	const allPlugins = await getRawData(maxLength);
-	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
-	if (test) {
-		console.log(`${chalk.blueBright.italic.underline(`Adding test plugin ${TEST_PLUGIN.name} (${chalk.underline(TEST_PLUGIN.id)}) to the list...`)}\n`);
-		allPlugins.push(TEST_PLUGIN);
-	}
-
-	spinner.start(chalk.yellow("Fetching database..."));
 	let response = await notion.databases.query({
 		database_id: process.env.NOTION_DATABASE_ID || "",
 	});
@@ -50,10 +50,18 @@ async function main() {
 		});
 		allResponse.push(response);
 	}
-
 	spinner.succeed(
 		chalk.green(`Database fetched! ${allResponse.length} pages found in the database.`)
 	);
+	const commitFromDB = getAllETAGByPlugins(allResponse) as PluginCommitDate[];
+
+	spinner.start(chalk.yellow("Fetching database..."));
+	const allPlugins = await getRawData(octokit, commitFromDB, maxLength);
+	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
+	if (test) {
+		console.log(`${chalk.blueBright.italic.underline(`Adding test plugin ${TEST_PLUGIN.name} (${chalk.underline(TEST_PLUGIN.id)}) to the list...`)}\n`);
+		allPlugins.push(TEST_PLUGIN);
+	}
 
 	console.log();
 

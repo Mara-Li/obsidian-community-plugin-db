@@ -1,7 +1,7 @@
 import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 import chalk from "chalk";
 
-import { DeletedPlugins, PluginItems } from "../interface";
+import { DeletedPlugins, PluginCommitDate,PluginItems } from "../interface";
 
 export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string) {
 	for (const response of database) {
@@ -74,4 +74,24 @@ export function searchDeletedPlugins(allPlugins:PluginItems[], allResponse: Quer
 		}
 	}
 	return deletedPlugins;
+}
+
+export function getAllETAGByPlugins(allResponse: QueryDatabaseResponse[]) {
+	const allCommitDate:PluginCommitDate[] = [];
+	for (const response of allResponse) {
+		for (const result of response.results) {
+			//@ts-ignore
+			const ETAG = result.properties.ETAG.rich_text[0]?.plain_text;
+			//@ts-ignore
+			const lastCommitDate = result.properties["Last commit"].date?.start;
+			//@ts-ignore
+			const pluginID = result.properties.ID.title[0]?.text.content;
+			allCommitDate.push({
+				id: pluginID,
+				ETAG,
+				commitDate: lastCommitDate
+			});
+		}
+	}
+	return allCommitDate;
 }

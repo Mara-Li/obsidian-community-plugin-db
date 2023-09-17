@@ -76,7 +76,7 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 			"Last commit": {
 				type: "date",
 				date: {
-					start: plugin.lastCommitDate?.toISOString() || "",
+					start: plugin.lastCommitDate ? new Date(plugin.lastCommitDate).toISOString() : "",
 					end: null,
 				},
 			},

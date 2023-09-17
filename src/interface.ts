@@ -6,8 +6,8 @@ export interface PluginItems {
 	author: string;
 	fundingUrl?: string;
 	isDesktopOnly?: boolean;
-	lastCommitDate?: Date;
-	repoArchived?: boolean;
+	lastCommitDate?: Date | string;
+	ETAG?: string;
 }
 
 export const TEST_PLUGIN: PluginItems = {
@@ -18,6 +18,7 @@ export const TEST_PLUGIN: PluginItems = {
 	repo: "test/test",
 	fundingUrl: "coucou",
 	isDesktopOnly: false,
+	lastCommitDate: new Date(),
 };
 
 export interface RichText {
@@ -50,6 +51,7 @@ export interface UpdateProperty {
 	"Tags": MultiSelect[],
 	"Last commit" : PropertyDate,
 	"Repository status" : MultiSelect,
+	"ETAG" : RichText,
 }
 
 export interface PropertyDate {
@@ -63,4 +65,10 @@ export interface DeletedPlugins {
 	id: string;
 	pluginID: string;
 	pluginName: string;
+}
+
+export interface PluginCommitDate {
+	id: string;
+	ETAG: string;
+	commitDate: string;
 }
