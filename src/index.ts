@@ -57,7 +57,7 @@ async function main() {
 	);
 	const commitFromDB = getAllETAGByPlugins(allResponse) as PluginCommitDate[];
 
-	spinner.start(chalk.yellow("Fetching database..."));
+	spinner.start(chalk.yellow("Fetching plugins list, manifest and commits..."));
 	const allPlugins = await getRawData(octokit, commitFromDB, maxLength);
 	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
 	if (test) {

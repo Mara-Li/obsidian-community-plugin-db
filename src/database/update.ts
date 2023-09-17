@@ -117,13 +117,19 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 	}
 	const oldStatuts = generateActivityTag(pageProperty);
 	const newStatuts = generateActivityTag(plugin);
+	//@ts-ignore
+	if (!actualPageProperty["Repository status"].select) {
+		//@ts-ignore
+		actualPageProperty["Repository status"].select = newStatuts;
+		toUpdate = true;
+		console.log(chalk.red("Mismatch: No status found"));
+	}
 	if (oldStatuts.name !== newStatuts.name) {
 		//@ts-ignore
 		actualPageProperty["Repository status"].select = newStatuts;
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${oldStatuts.name} !== ${newStatuts.name}`));
 	}
-
 
 	if (toUpdate) {
 		await notion.pages.update({
