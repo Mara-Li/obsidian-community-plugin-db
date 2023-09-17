@@ -36,7 +36,7 @@ export interface PropertyURL {
 	url: string;
 }
 
-type MultiSelect = {
+export type MultiSelect = {
 	id?: string;
 	name: string;
 	color?: string;

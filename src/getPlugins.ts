@@ -7,7 +7,7 @@ import { PluginCommitDate, PluginItems } from "./interface";
  * Use HTTPS request to get raw JSON data from github raw.url
  * @returns {Promise<PluginItems[]>} - Array of plugin items
  */
-export async function getRawData(octokit: Octokit, dbCommitDate: PluginCommitDate[], length?: number) {
+export async function getRawData(octokit: Octokit, dbCommitDate: PluginCommitDate[], length?: number): Promise<PluginItems[]> {
 	const url = "https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugins.json";
 	const content = await fetch(url);
 	let data = await content.json() as PluginItems[];
@@ -26,7 +26,13 @@ export async function getRawData(octokit: Octokit, dbCommitDate: PluginCommitDat
 	return data as PluginItems[];
 }
 
-async function getManifestOfPlugin(plugin: PluginItems) {
+/**
+ * Get the manifest of the plugin from github repo
+ * @param plugin {PluginItems}
+ * @returns {Promise<any>}
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function getManifestOfPlugin(plugin: PluginItems): Promise<any> {
 	try {
 		const manifest = await fetch(`https://raw.githubusercontent.com/${plugin.repo}/master/manifest.json`);
 		return await manifest.json();
@@ -36,7 +42,16 @@ async function getManifestOfPlugin(plugin: PluginItems) {
 	}
 }
 
-async function repositoryInformation(plugin: PluginItems, octokit: Octokit, ETAG?: string, lastCommitDate?: string) {
+/**
+ * Use Octokit to get the last commit date of the plugin, allowing quick triage of the plugin status
+ * Register the ETAG of the request to avoid unnecessary request & broken my rate limit
+ * @param plugin {PluginItems} - The plugin to check
+ * @param octokit {Octokit} - GitHub Api client because I need to be authenticated to use the API
+ * @param ETAG {string} - The ETAG of the last request
+ * @param lastCommitDate {string} - The last commit date of the plugin
+ * @returns {Promise<{ETAG: string | undefined, lastCommitDate: string | undefined}>}
+ */
+async function repositoryInformation(plugin: PluginItems, octokit: Octokit, ETAG?: string, lastCommitDate?: string): Promise<{ ETAG: string | undefined; lastCommitDate: string | undefined; }> {
 	try {
 		const commits = await octokit.request("GET /repos/{owner}/{repo}/commits", {
 			owner: plugin.repo.split("/")[0],

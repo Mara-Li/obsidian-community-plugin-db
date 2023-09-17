@@ -85,6 +85,17 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 				//eslint-disable-next-line
 				select: generateActivityTag(plugin) as any,
 			},
+			"ETAG": {
+				type: "rich_text",
+				rich_text: [
+					{
+						type: "text",
+						text: {
+							content: plugin.ETAG || "",
+						},
+					},
+				],
+			},
 		}
 	};
 	await notion.pages.create(bodyParameters);

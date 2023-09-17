@@ -1,10 +1,15 @@
 import { format,parseISO } from "date-fns";
 
-import { PluginItems, PropertyURL, RichText } from "./interface";
+import { MultiSelect,PluginItems, PropertyURL, RichText } from "./interface";
 
 
-
-export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding" | "ETAG") {
+/**
+ * Generate the different property for the plugin when a plugin must be updated
+ * @param plugin {PluginItems} - The plugin to update
+ * @param type {"author" | "description" | "repo" | "name" | "funding" | "ETAG"} - The property to update
+ * @returns {RichText | PropertyURL | MultiSelect | undefined}
+ */
+export function generateRichText(plugin: PluginItems, type: "author" | "description" | "repo" | "name" | "funding" | "ETAG"): RichText | PropertyURL | MultiSelect | undefined {
 	if (type === "author") {
 		return {
 			type: "rich_text",
@@ -66,7 +71,12 @@ export function generateRichText(plugin: PluginItems, type: "author" | "descript
 	}
 }
 
-export function generateMobileTag(plugin: PluginItems) {
+/**
+ * Generate the tag for the plugin desktop only based on plugin.isDesktopOnly
+ * @param plugin {PluginItems} - The plugin to check
+ * @returns {{name: string, color: string}[]} - The tag
+ */
+export function generateMobileTag(plugin: PluginItems): MultiSelect[] {
 	if (!plugin.isDesktopOnly) {
 		return [{
 			name: "mobile",
@@ -76,7 +86,12 @@ export function generateMobileTag(plugin: PluginItems) {
 	return [];
 }
 
-export function generateActivityTag(plugin: PluginItems) {
+/**
+ * Generate the tag for the plugin activity based on plugin.lastCommitDate
+ * @param plugin {PluginItems} - The plugin to check
+ * @returns {MultiSelect} - The tag
+ */
+export function generateActivityTag(plugin: PluginItems): MultiSelect {
 	const active = {
 		name: "#ACTIVE",
 		color: "blue"
@@ -96,6 +111,11 @@ export function generateActivityTag(plugin: PluginItems) {
 	return stale;
 }
 
+/**
+ * Universal date format for comparaison between the plugin.lastCommitDate and the property "Last commit"
+ * @param date {Date | string | undefined} - The date to format
+ * @returns {string} - The date in the format yyyy-MM-dd'T'HH:mm
+ */
 export function uniDate(date: Date | string | undefined) {
 	if (!date) {
 		return "";

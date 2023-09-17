@@ -1,9 +1,14 @@
-import { QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
+import { PartialDatabaseObjectResponse, PartialPageObjectResponse, QueryDatabaseResponse } from "@notionhq/client/build/src/api-endpoints";
 import chalk from "chalk";
 
 import { DeletedPlugins, PluginCommitDate,PluginItems } from "../interface";
-
-export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string) {
+/**
+ * Search a page in the database
+ * @param database {QueryDatabaseResponse[]}
+ * @param pageID {string}
+ * @returns {PartialPageObjectResponse | PartialDatabaseObjectResponse | undefined}
+ */
+export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: string): PartialPageObjectResponse | PartialDatabaseObjectResponse | undefined {
 	for (const response of database) {
 		for (const result of response.results) {
 			if (result.id === pageID) {
@@ -14,6 +19,12 @@ export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: 
 	return undefined;
 }
 
+/**
+ * Search a specific tags in the multi_select property, and return if the tag need to be added, removed or nothing
+ * @param tags {any}
+ * @param plugin {PluginItems}
+ * @returns {"remove" | "add" | "none"}
+ */
 //eslint-disable-next-line
 export function searchTagsInMultiSelect(tags: any, plugin: PluginItems): "remove" | "add" | "none" {
 	for (const tag of tags.multi_select) {
@@ -76,6 +87,11 @@ export function searchDeletedPlugins(allPlugins:PluginItems[], allResponse: Quer
 	return deletedPlugins;
 }
 
+/**
+ * Get all ETAG by plugins from the database
+ * @param allResponse {QueryDatabaseResponse[]} - The database response
+ * @returns PluginCommitDate[]
+ */
 export function getAllETAGByPlugins(allResponse: QueryDatabaseResponse[]) {
 	const allCommitDate:PluginCommitDate[] = [];
 	for (const response of allResponse) {

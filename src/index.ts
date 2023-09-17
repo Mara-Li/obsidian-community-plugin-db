@@ -13,7 +13,9 @@ import { PluginCommitDate, TEST_PLUGIN } from "./interface";
 
 
 config();
-
+/**
+ * Main function
+ */
 async function main() {
 
 	const octokit = new Octokit({

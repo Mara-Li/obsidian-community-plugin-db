@@ -10,16 +10,15 @@ import { searchPageInDatabase, searchTagsInMultiSelect } from "./search";
  * If a plugin already exist in the DB, compare all entry. If one of the entry content is different, update the page
  * @param plugin {PluginItems}
  * @param notion {Client}
+ * @param database {QueryDatabaseResponse[]} - The database
+ * @param pageID {string} - The pageID of the plugin
  */
 export async function updateOldEntry(plugin: PluginItems, database: QueryDatabaseResponse[], pageID: string, notion: Client) {
-	//verify property of pageID
-	//get page_id in DB
 	const page = searchPageInDatabase(database, pageID);
 	if (!page) {
 		console.log(chalk.red(`Error: pageID ${pageID} doesn't exist in the database.`));
 		return;
 	}
-	//create pageProperty as PluginItems
 	const pageProperty: PluginItems = {
 		//@ts-ignore
 		author: page.properties.Author.rich_text[0].plain_text,
@@ -37,7 +36,6 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		lastCommitDate: page.properties["Last commit"].date?.start ?? null,
 		//@ts-ignore
 		ETAG: page.properties.ETAG.rich_text[0]?.plain_text ?? null,
-
 	};
 
 	const actualPageProperty: UpdateProperty = {
@@ -95,7 +93,6 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		toUpdate = true;
 		console.log(chalk.red("Mismatch: #mobile tag is missing."));
 	} else if (searchTag === "remove") {
-		//remove mobile tag
 		//@ts-ignore
 		//eslint-disable-next-line
 		actualPageProperty.Tags.multi_select = actualPageProperty.Tags.multi_select.filter((tag: any) => tag.name !== "mobile");
