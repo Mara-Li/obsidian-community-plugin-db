@@ -81,9 +81,9 @@ async function main() {
 	spinner.start(chalk.underline("Search deleted plugins..."));
 	const deletedPlugins = searchDeletedPlugins(allPlugins, allResponse);
 	if (deletedPlugins.length > 0) {
-		spinner.succeed(chalk.green(`Found ${deletedPlugins.length} deleted plugins.`));
+		spinner.succeed(chalk.red.italic(`Found ${deletedPlugins.length} deleted plugins.`));
 		for (const plugin of deletedPlugins) {
-			//console.log(chalk.redBright(`- ${plugin.pluginName} (${chalk.underline(plugin.pluginID)})`));
+			console.log(chalk.redBright(`- ${plugin.pluginName} (${chalk.underline(plugin.pluginID)})`));
 			if (!dev)
 				await deletePageID(plugin, notion);
 		}
