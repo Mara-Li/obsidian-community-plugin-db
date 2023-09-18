@@ -66,7 +66,7 @@ export async function addNewEntry(plugin: PluginItems, notion: Client) {
 			},
 			"Funding": {
 				type: "url",
-				url: plugin?.fundingUrl || ""
+				url: plugin?.fundingUrl || null
 			},
 			"Tags": {
 				type: "multi_select",
