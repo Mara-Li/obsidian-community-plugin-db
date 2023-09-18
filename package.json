@@ -7,7 +7,8 @@
     "build": "tsc",
     "start": "esrun src/index.ts",
     "dev": "cross-env NODE_ENV=development esrun src/index.ts",
-    "test": "cross-env TEST=true esrun src/index.ts"
+    "test": "cross-env TEST=true esrun src/index.ts",
+    "extract" : "esrun src/localExtract.ts"
   },
   "keywords": [],
   "author": "",
