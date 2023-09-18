@@ -66,6 +66,7 @@ async function repositoryInformation(plugin: PluginItems, octokit: Octokit, ETAG
 			lastCommitDate: commits.data[0].commit.author?.date ? new Date(commits.data[0].commit.author?.date).toISOString() : lastCommitDate,
 		};
 	} catch (error) { //HTTP 304 Not Modified
+		//console.log(chalk.yellow(`No update for ${plugin.name} (${plugin.id})`));
 		return {
 			ETAG,
 			lastCommitDate,
