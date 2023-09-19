@@ -27,6 +27,11 @@ export function searchPageInDatabase(database: QueryDatabaseResponse[], pageID: 
  */
 //eslint-disable-next-line
 export function searchTagsInMultiSelect(tags: any, plugin: PluginItems): "remove" | "add" | "none" {
+	//eslint-disable-next-line @typescript-eslint/no-explicit-any
+	const errorTags = tags.multi_select.find((tag: any) => tag.name === "ERROR"); //prevent adding the mobile tag to be added if the plugin have the ERROR tag
+	if (errorTags) {
+		return "none";
+	}
 	for (const tag of tags.multi_select) {
 		if (tag.name === "mobile" && plugin.isDesktopOnly) { //need to remove mobile tag
 			return "remove";

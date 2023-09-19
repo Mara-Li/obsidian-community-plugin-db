@@ -80,7 +80,7 @@ export function generateMobileTag(plugin: PluginItems): MultiSelect[] {
 	if (!plugin.isDesktopOnly) {
 		return [{
 			name: "mobile",
-			color: "green"
+			color: "blue"
 		}];
 	}
 	return [];
