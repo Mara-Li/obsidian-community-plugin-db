@@ -8,6 +8,7 @@ export interface PluginItems {
 	isDesktopOnly?: boolean;
 	lastCommitDate?: Date | string;
 	ETAG?: string;
+	status?: string;
 }
 
 export const TEST_PLUGIN: PluginItems = {

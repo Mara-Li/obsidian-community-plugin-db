@@ -36,6 +36,8 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		lastCommitDate: page.properties["Last commit"].date?.start ?? null,
 		//@ts-ignore
 		ETAG: page.properties.ETAG.rich_text[0]?.plain_text ?? null,
+		//@ts-ignore
+		status: page.properties["Repository status"].select?.name ?? undefined,
 	};
 
 	const actualPageProperty: UpdateProperty = {
@@ -115,20 +117,14 @@ export async function updateOldEntry(plugin: PluginItems, database: QueryDatabas
 		toUpdate = true;
 		console.log(chalk.red(`Mismatch: ${pageProperty.ETAG} !== ${plugin.ETAG}`));
 	}
-	const oldStatuts = generateActivityTag(pageProperty);
 	const newStatuts = generateActivityTag(plugin);
 	//@ts-ignore
-	if (!actualPageProperty["Repository status"].select) {
+	if (!actualPageProperty["Repository status"].select ||
+		pageProperty.status !== newStatuts.name && (pageProperty.status !== "#ARCHIVED" && pageProperty.status !== "#MAINTENANCE")) {
 		//@ts-ignore
 		actualPageProperty["Repository status"].select = newStatuts;
 		toUpdate = true;
-		console.log(chalk.red("Mismatch: No status found"));
-	}
-	if (oldStatuts.name !== newStatuts.name && (oldStatuts.name !== "#ARCHIVED" && oldStatuts.name !== "#MAINTENANCE")) {
-		//@ts-ignore
-		actualPageProperty["Repository status"].select = newStatuts;
-		toUpdate = true;
-		console.log(chalk.red(`Mismatch: ${oldStatuts.name} !== ${newStatuts.name}`));
+		console.log(chalk.red(`Mismatch: Around status: ${pageProperty.status} !== ${newStatuts.name}`));
 	}
 
 	if (toUpdate) {
