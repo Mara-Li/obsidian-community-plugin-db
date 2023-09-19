@@ -1,1180 +1,1182 @@
-- Natural Language Dates : nldates-obsidian
-- Hotkeys++ : hotkeysplus-obsidian
-- Obsidian Git : obsidian-git
-- Paste URL into selection : url-into-selection
-- Sliding Panes (Andy's Mode) : sliding-panes-obsidian
-- Show Whitespace : cm-show-whitespace-obsidian
-- Advanced Tables : table-editor-obsidian
-- Leader Hotkeys : leader-hotkeys-obsidian
-- Recent Files : recent-files-obsidian
-- Ledger : ledger-obsidian
-- Note Refactor : note-refactor-obsidian
-- Calendar : calendar
-- Text expand : mrj-text-expand
-- Jump to link : mrj-jump-to-link
-- Reading Time : obsidian-reading-time
-- Todoist Sync Plugin : todoist-sync-plugin
-- Vimrc Support : obsidian-vimrc-support
-- Shortcuts extender : shortcuts-extender
-- Add links to current note : mrj-crosslink-between-notes
-- Quick Switcher++ : darlal-switcher-plus
-- Day Planner : obsidian-day-planner
-- Editor Syntax Highlight : cm-editor-syntax-highlight-obsidian
-- Review : review-obsidian
-- Hider : obsidian-hider
-- Minimal Theme Settings : obsidian-minimal-settings
-- Discord Rich Presence : obsidian-discordrpc
-- Templater : templater-obsidian
-- Convert url to preview (iframe) : convert-url-to-iframe
-- Search++ : searchpp
-- Better Word Count : better-word-count
-- Workbench : workbench-obsidian
-- Latex Environments : obsidian-latex-environments
-- RTL Support : obsidian-rtl
-- Markdown prettifier : markdown-prettifier
-- css snippets : css-snippets
-- Link indexer : obsidian-link-indexer
-- macOS Keyboard Navigation : macOS-keyboard-nav-obsidian
-- Extract Highlights : extract-highlights-plugin
-- Find orphaned files and broken links : find-unlinked-files
-- Wikilinks to MDLinks : wikilinks-to-mdlinks-obsidian
-- Smart Random Note : smart-random-note
-- Tab Switcher : cycle-through-panes
-- ABC Music Notation : music-code-blocks
-- Typewriter Scroll : cm-typewriter-scroll-obsidian
-- Youglish Plugin : obsidian-youglish-plugin
-- Dangling links : obsidian-dangling-links
-- Dangerzone Writing : dangerzone-writing-plugin
-- Maximise Active Pane : maximise-active-pane-obsidian
-- Julian Date : obsidian-juliandate
-- Emoji Toolbar : obsidian-emoji-toolbar
-- Fullscreen Focus Mode : obsidian-fullscreen-plugin
-- Footlinks : footlinks
-- Mind Map : obsidian-mind-map
-- Flashcards : flashcards-obsidian
-- Completed Area : completed-area
-- Citations : obsidian-citation-plugin
-- Obsidian_to_Anki : obsidian-to-anki-plugin
-- Rollover Daily Todos : obsidian-rollover-daily-todos
-- Automatically reveal active file : obsidian-reveal-active-file
-- Export To TeX : obsidian-export-to-tex
-- Extended MathJax : obsidian-latex
-- Apple Reminders : obsidian-apple-reminders-plugin
-- Contextual Typography : obsidian-contextual-typography
-- Neo4j Graph View : neo4j-graph-view
-- Snippets plugin : snippets
-- Temple : obsidian-temple
-- Relative Line Numbers : obsidian-relative-line-numbers
-- Obsidian Charts : obsidian-charts
-- Discordian Theme : discordian-plugin
-- Autocomplete : obsidian-autocomplete-plugin
-- Completed Task Display : completed-task-display
-- PDF Highlights : obsidian-extract-pdf-highlights
-- YouHaveBeenStaring : youhavebeenstaring-plugin
-- metatemplates : obsidian-metatemplates
-- Imgur Plugin : obsidian-imgur-plugin
-- Checklist : obsidian-checklist-plugin
-- Text Expander : obsidian-text-expander
-- Search on Internet : search-on-internet
-- File path to URI : obsidian-file-path-to-uri
-- Page Heading From Links : page-heading-from-links
-- Icons : obsidian-icons-plugin
-- Folder Note : folder-note-plugin
-- Vantage - Advanced search builder : vantage-obsidian
-- Sort & Permute lines : obsidian-sort-and-permute-lines
-- Min3ditorHotkeys : obsidian-min3ditorhotkeys-plugin
-- JSONifier : obsidian-jsonifier
-- Things Logbook : things-logbook
-- Hotkeys for Bookmarks : obsidian-shortcuts-for-starred-files
-- Filename Heading Sync : obsidian-filename-heading-sync
-- Obsidian Orthography : obsidian-orthography
-- Obsidian Query Language : obsidian-query-language
-- Markdown Formatting Assistant : obsidian-markdown-formatting-assistant-plugin
-- Journey : obsidian-journey-plugin
-- Tag Wrangler : tag-wrangler
-- Better PDF Plugin : better-pdf-plugin
-- Dataview : dataview
-- Periodic Notes : periodic-notes
-- Show Current File Path : obsidian-show-file-path
-- PaperCut : obsidian-paper-cut
-- Comments : obsidian-comments
-- ini Editor : ini-obsidian
-- Various Complements : various-complements
-- Timelines : obsidian-timelines
-- txt as md : txt-as-md-obsidian
-- Note Folder Autorename : note-folder-autorename
-- Daily Activity : daily-activity
-- Daily Stats : obsidian-daily-stats
-- Custom window title : open-note-to-window-title
-- Meld Encrypt : meld-encrypt
-- Vault Statistics : obsidian-vault-statistics-plugin
-- Obsidian TODO | Text-based GTD : obsidian-plugin-todo
-- Hotkeys for specific files : obsidian-hotkeys-for-specific-files
-- CSV Editor : csv-obsidian
-- Table of Contents : obsidian-plugin-toc
-- Mochi Cards Exporter : mochi-cards-exporter
-- Prettier Format : obsidian-plugin-prettier
-- Furigana : obsidian-furigana
-- Vault Changelog : obsidian-vault-changelog
-- Chesser : chesser-obsidian
-- Activity History : obsidian-activity-history
-- Chessboard Viewer : obsidian-chessboard
-- Footnote Shortcut : obsidian-footnotes
-- Gallery : obsidian-gallery
-- NoteTweet : notetweet
-- Code block from selection : code-block-from-selection
-- Format Hotkeys : format-hotkeys-obsidian
-- Obsidian Leaflet : obsidian-leaflet-plugin
-- Remember cursor position : remember-cursor-position
-- Pane Relief : pane-relief
-- DEVONlink : DEVONlink-obsidian
-- Hotkey Helper : hotkey-helper
-- Text Snippets : text-snippets-obsidian
-- Consistent attachments and links : consistent-attachments-and-links
-- PlantUML : obsidian-plantuml
-- Open cards in imdone from Obsidian. : imdone-obsidian-plugin
-- Spotlight : obsidian-spotlight
-- Unique attachments : unique-attachments
-- Dice Roller : obsidian-dice-roller
-- LanguageTool Integration : obsidian-languagetool-plugin
-- Commits : obsidian-commits
-- Outliner : obsidian-outliner
-- Extract url content : extract-url
-- Find and replace in selection : find-and-replace-in-selection
-- Buttons : buttons
-- Admonition : obsidian-admonition
-- Tracker : obsidian-tracker
-- Hotkeys for templates : obsidian-hotkeys-for-templates
-- Style Settings : obsidian-style-settings
-- Advanced URI : obsidian-advanced-uri
-- Fountain : obsidian-fountain
-- Word Splitting for Simplified Chinese in Edit Mode and Vim Mode : cm-chs-patch
-- Table Extended : table-extended
-- Privacy Glasses : privacy-glasses
-- Highlight Public Notes : obsidian-highlightpublicnotes-plugin
-- Media Extended : media-extended
-- Regex Pipeline : obsidian-regex-pipeline
-- Juggl : juggl
-- Spaced Repetition : obsidian-spaced-repetition
-- Readwise Community : obsidian-readwise
-- Obsidian Tabs : obsidian-tabs
-- Icon Swapper : obsidian-icon-swapper
-- mdx as md : mdx-as-md-obsidian
-- Excalidraw : obsidian-excalidraw-plugin
-- Auto Link Title : obsidian-auto-link-title
-- Python lab : python-lab-plugin
-- Kanban : obsidian-kanban
-- Incremental Writing : obsidian-incremental-writing
-- Kindle Highlights : obsidian-kindle-plugin
-- Metatable : obsidian-metatable
-- Ozan's Image in Editor Plugin : oz-image-plugin
-- Recall : obsidian-recall
-- Tidy Footnotes : obsidian-tidy-footnotes
-- Beeminder Word Count Plugin : beeminder-word-count-plugin
-- QR Code Generator Plugin : obsidian-qrcode-plugin
-- Focus Mode : obsidian-focus-mode
-- Underline : obsidian-underline
-- Clear Unused Images : oz-clear-unused-images
-- Markdown Furigana : obsidian-markdown-furigana
-- 2Hop Links Plugin : obsidian-2hop-links-plugin
-- Image auto upload Plugin : obsidian-image-auto-upload-plugin
-- Org Mode : obsidian-org-mode
-- Open Link With : obsidian-open-link-with
-- Stopwatch Plugin : obsidian-stopwatch-plugin
-- Supercharged Links : supercharged-links-obsidian
-- 盘古 PanGu : obsidian-pangu
-- Related Notes Finder : obsidian-related-notes-finder
-- koncham workspace : koncham-workspace
-- React Components : obsidian-react-components
-- Tasks : obsidian-tasks-plugin
-- Readwise Mirror : readwise-mirror
-- Auto pair chinese symbol : obsidian-auto-pair-chinese-symbol
-- Pomodoro : obsidian-pomodoro-plugin
-- Fantasy Statblocks : obsidian-5e-statblocks
-- Zoom : obsidian-zoom
-- Collapse All : obsidian-collapse-all-plugin
-- Charts View : obsidian-chartsview-plugin
-- Dictionary : obsidian-dictionary-plugin
-- Liquid Templates : liquid-templates
-- Better footnote : better-fn
-- Aut-O-Backups : obsidian-dropbox-backups
-- MetaEdit : metaedit
-- Static File Server : obsidian-static-file-server
-- Easy Typing : easy-typing-obsidian
-- Sidebar Expand on Hover : obsidian-sidebar-expand-on-hover
-- Zoottelkeeper Plugin : zoottelkeeper-obsidian-plugin
-- File Tree Alternative Plugin : file-tree-alternative
-- Electron Window Tweaker : obsidian-electron-window-tweaker
-- Smart Typography : obsidian-smart-typography
-- Grandfather : obsidian-grandfather
-- Text Format : obsidian-text-format
-- Adjacency Matrix Maker : adjacency-matrix-maker
-- Taskbone OCR : taskbone-ocr-plugin
-- Gist : obsidian-gist
-- Argument Map with Argdown : obsidian-argdown-plugin
-- CSV Table : obsidian-csv-table
-- Advanced New File : obsidian-advanced-new-file
-- File Explorer Note Count : file-explorer-note-count
-- Obsidian title index : obsidian-title-index
-- QuickAdd : quickadd
-- Pluck : obsidian-pluck
-- Pandoc : obsidian-pandoc
-- Habit Tracker : obsidian-habit-tracker
-- Amazing Marvin : obsidian-amazingmarvin-plugin
-- Status Bar Pomodoro Timer : obsidian-statusbar-pomo
-- Kroki : obsidian-kroki
-- Timeline : obsidian-timeline
-- Map View : obsidian-map-view
-- Copy Image and URL context menu : copy-url-in-preview
-- Initiative Tracker : initiative-tracker
-- Cursor Location : obsidian-cursor-location-plugin
-- Enhancing Mindmap : obsidian-enhancing-mindmap
-- Breadcrumbs : breadcrumbs
-- Open vault in VS Code : open-vscode
-- Image Uploader : obsidian-image-uploader
-- Garble Text : garble-text
-- Paste Mode : obsidian-paste-to-current-indentation
-- Obsimian Exporter : obsimian-exporter
-- Find & Replace in Selection : obsidian-find-and-replace-in-selection
-- Embedded Code Title : obsidian-embedded-code-title
-- Homepage : homepage
-- Random To-Do : obsidian-random-todo
-- Media Extended BiliBili Plugin : mx-bili-plugin
-- cMenu : cmenu-plugin
-- Daf Yomi : obsidian-daf-yomi
-- Markdown Attributes : markdown-attributes
-- WaveDrom : obsidian-wavedrom
-- Phone to Roam to Obsidian : phone-to-roam-to-obsidian
-- Budget WYSIWYG : obsidian-budget-wysiwyg
-- Pocket : obsidian-pocket
-- Obsidian42 - WordNet Dictionary : obsidian-wordnet-plugin
-- Multi-line Formatting : multi-line-formatting
-- Apply Patterns : obsidian-apply-patterns
-- Longform : longform
-- Readwise Official : readwise-official
-- Activity Logger : obsidian-activity-logger
-- Toggl Track : obsidian-toggl-integration
-- AidenLx's Folder Note : alx-folder-note
-- Hide Sidebars on Window Resize : obsidian-hide-sidebars-when-narrow
-- Linter : obsidian-linter
-- Number Headings : number-headings-obsidian
-- Force note view mode : obsidian-view-mode-by-frontmatter
-- File Explorer Markdown Titles : file-explorer-markdown-titles
-- Theme Picker : theme-picker
-- Emoji Shortcodes : emoji-shortcodes
-- Reminder : obsidian-reminder-plugin
-- Go to Line : obsidian-go-to-line
-- Open with : open-with
-- Editor Commands Remap : editor-commands-remap
-- Command Alias : obsidian-command-alias-plugin
-- Rich Links : obsidian-rich-links
-- Obsidian Anki Sync : ObsidianAnkiSync
-- Window Collapse : window-collapse
-- Relative Find : obsidian-relative-find
-- Image Toolkit : obsidian-image-toolkit
-- Shell commands : obsidian-shellcommands
-- Hover External Link : hover-external-link
-- CodeMirror Options : obsidian-codemirror-options
-- Code Block Enhancer : obsidian-code-block-enhancer
-- Copy Block Link : obsidian-copy-block-link
-- Diagrams : drawio-obsidian
-- Vim Input Method Switch : obsidian-vim-im-switch-plugin
-- Luhman : luhman
-- Daily Named Folder : obsidian-daily-named-folder
-- Obsidian Trello : obsidian-trello
-- Annotator : obsidian-annotator
-- CustomJS : customjs
-- Random Structural Diary : random-structural-diary-plugin
-- Better File Link : obsidian-file-link
-- Quick Explorer : quick-explorer
-- Banners : obsidian-banners
-- Obsidian42 - Jump-to-Date : obsidian-jump-to-date-plugin
-- Icon Folder : obsidian-icon-folder
-- Ghost Fade Focus : ghost-fade-focus
-- Folder Note Core : folder-note-core
-- Jupyter : obsidian-jupyter
-- HackerNews : obsidian-hackernews
-- Reset Font Size : obsidian-reset-font-size
-- Podcast Note : podcast-note
-- Stille : obsidian-stille
-- Obsidian markmind : obsidian-markmind
-- Carry-Forward : obsidian-carry-forward
-- Archiver : obsidian-task-archiver
-- Card View Mode : obsidian-card-view-mode
-- Scales and Chords : scales-chords
-- Enhance Copy Note : copy-note
-- Customizable Menu : customizable-menu
-- Workspaces Plus : workspaces-plus
-- Simple Embeds : simple-embeds
-- ReadItLater : obsidian-read-it-later
-- Obsidian42 - Text Transporter : obsidian42-text-transporter
-- MarginNote Companion : marginnote-companion
-- Netwik : netwik
-- Prominent Bookmarked Files : obsidian-prominent-starred-files
-- OzanShare Publish : ozanshare-publish
-- Code Editor Shortcuts : obsidian-editor-shortcuts
-- Task Collector (TC) : obsidian-task-collector
-- Metadata Extractor : metadata-extractor
-- Quick LaTeX for Obsidian : quick-latex
-- Itinerary : obsidian-itinerary
-- URI Commands : uri-commands
-- Update time on edit : update-time-on-edit
-- Nomnoml Diagram : obsidian-nomnoml-diagram
-- Map of Content : map-of-content
-- Local images : obsidian-local-images
-- Vocabulary View : obsidian-vocabulary-view
-- Obsidian42 - BRAT : obsidian42-brat
-- Snippet Commands : snippet-commands-obsidian
-- JavaScript Init : obsidian-javascript-init
-- Key Promoter : key-promoter
-- Self-hosted LiveSync : obsidian-livesync
-- Plotly : obsidian-plotly
-- Wikipedia : obsidian-wikipedia
-- Lumberjack 🪓 🪵 : lumberjack-obsidian
-- Obsidian Link Converter : obsidian-link-converter
-- MySnippets : mysnippets-plugin
-- Hypothes.is : obsidian-hypothesis-plugin
-- Another Quick Switcher : obsidian-another-quick-switcher
-- Link Headers Directly : link-headers-directly
-- Meld Calc : meld-calc
-- Tabout : tabout
-- Fantasy Calendar : fantasy-calendar
-- Improved VimCursor : improved-vimcursor
-- Quote of the Day : quote-of-the-day
-- Limelight : obsidian-limelight
-- Prompt : prompt
-- Link Archive : obsidian-link-archive
-- Obsidian Chess : obsidian-chess
-- HTML Tags Autocomplete : obsidian-html-tags-autocomplete
-- Advanced Cursors : advanced-cursors
-- Stenography : stenography-obsidian
-- Obsidian Webhooks : obsidian-webhooks
-- Tweet to Markdown : obsidian-tweet-to-markdown
-- Habitica Sync : obsidian-habitica-integration
-- Oura Ring : obsidian-oura-plugin
-- Metacopy & URL : obsidian-metacopy
-- Image Caption : obsidian-image-caption
-- Graph Analysis : graph-analysis
-- Custom Attachment Location : obsidian-custom-attachment-location
-- Cryptsidian : cryptsidian
-- Crypto Lookup : obsidian-crypto-lookup
-- Copy as LaTeX : copy-as-latex
-- Auto Split : obsidian-auto-split
-- Word Sprint : obsidian-word-sprint
-- Publish and GitHub URL : copy-publish-url
-- CardBoard : card-board
-- Bible Reference : obsidian-bible-reference
-- Sentence Navigator : obsidian-sentence-navigator
-- Language Translator : language-translator
-- Auto Class : auto-class
-- Obsidian Cloudinary Uploader : obsidian-cloudinary-uploader
-- RSS Reader : rss-reader
-- Mousewheel Image zoom : mousewheel-image-zoom
-- Flexible Pomodoro For Obsidian : obsidian-flexible-pomo
-- Lineup Builder : obsidian-lineup-builder
-- Reveal Active File Button : reveal-active-file-button
-- Structured Plugin : obsidian-structured-plugin
-- CookLang Editor : cooklang-obsidian
-- Highlightr : highlightr-plugin
-- Remotely Save : remotely-save
-- From Template : obsidian-notes-from-template
-- Overdue : obsidian-overdue
-- Dialogue : obsidian-dialogue-plugin
-- Title Serial Number Plugin : obsidian-title-serial-number-plugin
-- Theme Design Utilities : obsidian-theme-design-utilities
-- Generic Initiative Tracker : generic-initiative-tracker
-- AnkiBridge : obsidian-ankibridge
-- Tressel Sync for Obsidian : obsidian-tressel
-- Second Window : image-window
-- Text to Speech : obsidian-tts
-- Link Favicons : link-favicon
-- Get Info : get-info-plugin
-- Matter : matter
-- Regex Find/Replace : obsidian-regex-replace
-- WordPress : obsidian-wordpress
-- Icon Shortcodes : obsidian-icon-shortcodes
-- TagFolder : obsidian-tagfolder
-- Advanced Slides : obsidian-advanced-slides
-- Obsidian Graphviz : obsidian-graphviz
-- Vim IM Select : vim-im-select
-- Emotion Picker : obsidian-emotion-picker
-- Quoth : quoth
-- Metronome : obsidian-metronome-plugin
-- Plaintext : obsidian-plaintext
-- Wrap with shortcuts : obsidian-wrap-with-shortcuts
-- Tomorrow's Daily Note : obsidian-tomorrows-daily-note
-- Rant-Lang : obsidian-rant
-- Smarter Markdown Hotkeys : obsidian-smarter-md-hotkeys
-- Global Hotkeys : obsidian-global-hotkeys
-- TimeStamper : obsidian-timestamper
-- JSON/CSV Importer : obsidian-import-json
-- Import Foundry VTT journal entries : import-foundry
-- Attachment Name Formatting : obsidian-attachment-name-formatting
-- Completr : obsidian-completr
-- Binary File Manager : obsidian-binary-file-manager-plugin
-- Local File Interface : obsidian-local-file-interface-plugin
-- Siteswap : obsidian-siteswap
-- ObsidianTweaks : obsidian-tweaks
-- Obsidian Memos : obsidian-memos
-- PARA Shortcuts : para-shortcuts
-- 13th Age Statblocks : 13th-age-statblocks
-- Dynamic Highlights : obsidian-dynamic-highlights
-- KOReader Highlights : obsidian-koreader-plugin
-- Snippetor : obsidian-snippetor
-- Sortable : obsidian-sortable
-- Weather Fetcher : weather-fetcher
-- Lock Screen : obsidian-lock-screen-plugin
-- Pinboard Sync : pinboard-sync
-- Shortcut Launcher : obsidian-shortcut-launcher
-- File Info Panel : obsidian-file-info-plugin
-- Topic Linking : obsidian-topic-linking
-- Multi-Column Markdown : multi-column-markdown
-- Copy as HTML : copy-as-html
-- Frontmatter Tag Suggest : obsidian-frontmatter-tag-suggest
-- Simple Note Quiz : simple-note-quiz
-- Local REST API : obsidian-local-rest-api
-- Code Block Labels : obsidian-codeblock-labels
-- Better Command Palette : obsidian-better-command-palette
-- Relativenumber (relative line numbers) : obsidian-relativenumber
-- Core Search Assistant : obsidian-core-search-assistant-plugin
-- Save as Gist : obsidian-save-as-gist
-- Divide & Conquer : obsidian-divide-and-conquer
-- Excel to Markdown Table : obsidian-excel-to-markdown-table
-- Power Search : obsidian-power-search
-- Tag, Word & Link Cloud : tag-word-cloud
-- Persistent Graph : persistent-graph
-- Auto Note Mover : auto-note-mover
-- Insert Heading Link : insert-heading-link
-- Settings Search : settings-search
-- Word Splitting for Japanese in Edit Mode : japanese-word-splitter
-- AidenLx's Folder Note - folderv Component : alx-folder-note-folderv
-- Chevereto Image Uploader : obsidian-chevereto-image-uploader
-- Todoist Text : todoist-text
-- Big Calendar : big-calendar
-- Command Palette-- : obsidian-command-palette-minus-plugin
-- Remember File State : obsidian-remember-file-state
-- Things Link : obsidian-things-link
-- Markdown shortcuts : markdown-shortcuts
-- Digital Garden : digitalgarden
-- Living Graph : obsidian-living-graph
-- Hotkeys Chords : obsidian-hotkeys-chords
-- Key Sequence Shortcut : obsidian-key-sequence-shortcut
-- Full Calendar : obsidian-full-calendar
-- Heatmap Calendar : heatmap-calendar
-- Daily notes opener : obsidian-daily-notes-opener
-- Mark and Select : obsidian-mark-and-select
-- Bible Linker : obsidian-bible-linker
-- Obsidian CircuitJS : obsidian-circuitjs
-- Creases : creases
-- Kobo Highlights Importer : obsidian-kobo-highlights-importer-plugin
-- Dynamic Embed : obsidian-dynamic-embed
-- Steemit : obsidian-steemit
-- Kindle Export : obsidian-kindle-export
-- Search Everywhere : obsidian-search-everywhere-plugin
-- Text Generator : obsidian-textgenerator-plugin
-- Markdown Table Editor : markdown-table-editor
-- Vim Multibyte Char Search : obsidian-vim-multibyte-char-search
-- Extract PDF Annotations : obsidian-extract-pdf-annotations
-- File Cleaner : obsidian-file-cleaner
-- Card View Switcher : obsidian-card-view-switcher-plugin
-- Novel Word Count : novel-word-count
-- Navigate Cursor History : heycalmdown-navigate-cursor-history
-- Obsidian matrix : obsidian-matrix
-- Waypoint : waypoint
-- Hover Editor : obsidian-hover-editor
-- Screwdriver : obsidian-screwdriver
-- Version History Diff (Sync, File Recovery & Git) : obsidian-version-history-diff
-- Format code blocks of various languages : obsidian-format-code
-- Buttondown : obsidian-buttondown-plugin
-- Lapel : lapel
-- Desmos : obsidian-desmos
-- Custom Frames : obsidian-custom-frames
-- Etherpad Lite : obsidian-etherpad-plugin
-- Quiet Outline : obsidian-quiet-outline
-- Daily Notes Viewer : obsidian-daily-notes-viewer
-- Zotero Integration : obsidian-zotero-desktop-connector
-- Telegraph Publish : obsidian-telegraph-publish
-- Path Title : obsidian-path-title
-- Jira Issue : obsidian-jira-issue
-- Smort : smort-obsidian
-- Control Characters : control-characters
-- AsciiDoc Blocks Plugin : obsidian-asciidoc-blocks
-- Fleeting Notes Sync : fleeting-notes-obsidian
-- Chat View : obsidian-chat-view
-- Doubleshift : obsidian-doubleshift
-- List Modified : obsidian-list-modified
-- Latex Suite : obsidian-latex-suite
-- Better CodeBlock : obsidian-better-codeblock
-- Wordnik Definitions : obsidian-wordnik
-- Typing speed : typing-speed
-- Google Tasks : obsidian-google-tasks
-- Obsidian jTab : obsidian-jtab
-- Book Search : obsidian-book-search-plugin
-- Paste image rename : obsidian-paste-image-rename
-- Scroll Offset : obsidian-scroll-offset
-- Obsius Publish : obsius-publish
-- Execute Code : execute-code
-- Obsidian Badge : obsidian-badge
-- Korean Book Info Plugin : kr-book-info-plugin
-- Drag-n-Drop for blocks : obsidian-drag-n-drop-plugin
-- Link Embed : obsidian-link-embed
-- Obsidian Columns : obsidian-columns
-- Github Publisher : obsidian-mkdocs-publisher
-- Notion Video Embed : obsidian-notion-video
-- Obsidian Math+ : obsidian-math-plus
-- Todoist Link : obsidian-todoist-link
-- Rewarder : obsidian-rewarder
-- Calibre : obsidian-calibre-plugin
-- Omnisearch : omnisearch
-- Plugins Galore : plugins-galore
-- Auto Card Link : auto-card-link
-- DataLoom : notion-like-tables
-- AutoMOC : auto-moc
-- Paste image Png to Jpeg : obsidian-paste-png-to-jpeg
-- Folder Index : obsidian-folder-index
-- Filename Emoji Remover : obsidian-filename-emoji-remover
-- ePub Reader : obsidian-epub-plugin
-- Pandoc Reference List : obsidian-pandoc-reference-list
-- Obsidian Enhancing Export : obsidian-enhancing-export
-- Enlightenment : enlightenment-obsidian
-- Release Timeline : obsidian-release-timeline
-- Folder Focus Mode : obsidian-folder-focus-mode
-- BBCode Convertor : obsidian-bbcode
-- Upcoming : obsidian-upcoming
-- Nuke Orphans : nuke-orphans
-- Front Matter Title : obsidian-front-matter-title-plugin
-- Bellboy : obsidian-bellboy
-- Function Plot : obsidian-functionplot
-- Note Auto Creator : obsidian-note-autocreator
-- Local Quotes : local-quotes
-- Yaml Manager : obsidian-state-switcher
-- Media DB Plugin : obsidian-media-db-plugin
-- Sequence Hotkeys : obsidian-sequence-hotkeys
-- Packrat : tasks-packrat-plugin
-- ExcaliBrain : excalibrain
-- Expand Bullet : obsidian-expand-bullet
-- DB Folder : dbfolder
-- Advanced Codeblock : obsidian-advanced-codeblock
-- Booksidian : booksidian-plugin
-- Simple Dice Roller : simple-dice-roller
-- Obsidian Camera : obsidian-camera
-- Markbase for Obsidian : obsidian-markbase
-- User Plugins : obsidian-user-plugins
-- Timestamp Notes : obsidian-timestamp-notes
-- Linkify : linkify
-- braincache : braincache
-- Share as Gist : obsidian-share-as-gist
-- Code Block : code-block-plugin
-- Google Calendar and Contacts Lookup : obsidian-google-lookup
-- Stack Overflow Answers : obsidian-stack-overflow
-- Redirect : obsidian-redirect
-- Zotero Bridge : zotero-bridge
-- Wielder : wielder
-- Obsidian shared to Notion : obsidian-to-notion
-- Image Gallery : obsidian-image-gallery
-- Thumbnails : obsidian-thumbnails
-- Table to CSV Exporter : obsidian-table-to-csv-exporter
-- Task Progress Bar : obsidian-task-progress-bar
-- Scroll Speed : scroll-speed
-- Translator : obsidian-translator
-- echarts : obsidian-echarts
-- Diagrams.net : obsidian-diagrams-net
-- Weread Plugin : obsidian-weread-plugin
-- PostgreSQL Obsidian : postgresql-obsidian
-- Zotero Link : zotero-link
-- Obsidian GoLinks : obsidian-golinks
-- Habit Tracker : habit-tracker
-- Typing Transformer : typing-transformer-obsidian
-- List Callouts : obsidian-list-callouts
-- Inline Scripts : obsidian-text-expander-js
-- Metadata Menu : metadata-menu
-- TimeDiff plugin : obsidian-plugin-time-diff
-- Trim Whitespace : obsidian-trim-whitespace
-- Ninja Cursor : ninja-cursor
-- Commander : cmdr
-- Obsidian Attendance : obsidian-attendance
-- File Hider : OA-file-hider
-- Path Finder : obsidian-path-finder
-- Focus and Highlight : obsidian-focus-plugin
-- File Cooker : obsidian-file-cooker
-- Hard Breaks : hard-breaks
-- Open Related Url : open-related-url
-- PodNotes : podnotes
-- Meeting notes : obsidian-meeting-notes
-- Tagged Documents Viewer : obsidian-plugin-tagged-documents-viewer
-- Simple Note Review : simple-note-review
-- Better Inline Fields : better-inline-fields
-- No Dupe Leaves : no-dupe-leaves
-- Open File by Magic Date : obsidian-open-file-by-magic-date
-- Heading Shifter : obsidian-heading-shifter
-- Group Snippets : obsidian-group-snippets
-- Raindrop Highlights : obsidian-raindrop-highlights
-- Note Linker : obisidian-note-linker
-- Dashing Cursor : obsidian-dashing-cursor
-- QuickShare : obsidian-quickshare
-- RPG Manager : rpg-manager
-- Literate Haskell : literate-haskell
-- Embed Code File : embed-code-file
-- Bulk Rename : obsidian-bulk-rename-plugin
-- Agile Task Notes : obsidian-agile-task-notes
-- Default New Tab Page : new-tab-default-page
-- Open In Other Editor : obsidian-open-in-other-editor
-- Simple Mention : obsidian-simple-mention
-- Auto Hide : obsidian-auto-hide
-- Janitor : janitor
-- Script Launcher : script-launcher
-- Party🎉 : obsidian-party
-- Day and Night : obsidian-day-and-night
-- TikZJax : obsidian-tikzjax
-- Todoist completed tasks : todoist-completed-tasks-plugin
-- Quick snippets and navigation : quick-snippets-and-navigation
-- Google Calendar : google-calendar
-- Copy Search URL : obsidian-copy-search-url
-- Super Simple Time Tracker : simple-time-tracker
-- Blockquote Levels : blockquote-levels
-- Custom File Explorer sorting : custom-sort
-- Table Generator : obsidian-table-generator
-- Aosr : aosr
-- Meta Bind Plugin : obsidian-meta-bind-plugin
-- Micro.publish : microblog-publish-plugin
-- Sakana Widget : obsidian-sakana-widget
-- Min Width : obsidian-min-width
-- Onyx Boox Annotation & Highlight Extractor : onyx-boox-extractor
-- Chronology : chronology
-- Duplicate Line : duplicate-line
-- ToggleList : obsidian-toggle-list
-- Squiggle : squiggle
-- Theme Toggler : obsidian-theme-toggler
-- Influx : influx
-- Week Planner : obsidian-week-planner
-- HTML Reader : obsidian-html-plugin
-- Dynamic RTL : dynamic-rtl
-- MathLinks : mathlinks
-- Note Synchronizer : note-synchronizer
-- URL Namer : url-namer
-- Douban : obsidian-douban-plugin
-- Image Inserter : insert-unsplash-image
-- Keyboard Analyzer : keyboard-analyzer
-- Plugin Update Tracker : obsidian-plugin-update-tracker
-- Update Relative Links : update-relative-links
-- Readavocado Sync : readavocado-sync
-- Repeat : repeat-plugin
-- Actions URI : actions-uri
-- Projects : obsidian-projects
-- Dynamic Background : obsidian-dynamic-background
-- Note Content Pusher : obsidian-note-content-pusher
-- Tag Summary : tag-summary-plugin
-- Alias from heading : obsidian-alias-from-heading
-- Obsidian OCR : obsidian-ocr
-- GitLab Issues : obsidian-gitlab-issues
-- Account Linker : obsidian-account-linker
-- Symbols Prettifier : symbols-prettifier
-- Obsidian MtG : obsidian-mtg
-- Addional Markdown suffix (.mdx/.svx). : obsidian-markdown-file-suffix
-- Editing Toolbar : editing-toolbar
-- Floating TOC : floating-toc
-- Checkbox 3 states : obsidian-checkbox3states-plugin
-- Status Bar Quote : status-bar-quote
-- qmd as md : qmd-as-md-obsidian
-- Obsidian to Flomo : obsidian-to-flomo
-- Obsidian Things3 Sync : obsidian-things3-sync
-- Mathpad : mathpad
-- Ordered List Style : list-style
-- Trash Explorer : obsidian-trash-explorer
-- Vika Sync : vika-sync
-- New Note New Window : obsidian-new-note-new-window
-- Awesome Flashcard : obsidian-awesome-flashcard
-- Daily Note Outline : obsidian-daily-note-outline
-- Edit Gemini : edit-gemini
-- Pretty BibTeX : obsidian-pretty-bibtex
-- Frontmatter Links : frontmatter-links
-- Ava : ava
-- Scroll to Top Plugin : obsidian-scroll-to-top-plugin
-- Old Note Admonitor : obsidian-old-note-admonitor
-- Export Image plugin : obsidian-export-image
-- Page Gallery : page-gallery
-- Obsidian42 - Strange New Worlds : obsidian42-strange-new-worlds
-- Dynbedded : obsidian-dynbedded
-- Copy document as HTML : copy-document-as-html
-- Chorded Hotkeys : obsidian-chorded-hotkeys
-- Dirtreeist : obsidian-dirtreeist
-- Obsidian Handlebars Template Plugin : obsidian-handlebars
-- 3D Graph : 3d-graph
-- Relation Pane : obsidian-relation-pane
-- Rapid Notes : obsidian-rapid-notes
-- Emo : emo-uploader
-- DeepL : deepl
-- Quran Lookup : obsidian-quran-lookup
-- Sigma : sigma
-- Better Reading Mode : better-reading-mode
-- New Bullet With Time : obsidian-new-bullet-with-time
-- Markdown to Jira Converter : obsidian-md-to-jira
-- Achievements : obsidian-achievements
-- Code Preview : obsidian-code-preview
-- Toggle Meta Yaml : obsidian-toggle-meta-yaml-plugin
-- Smart Links : obsidian-smart-links
-- Daily Notes Editor : daily-notes-editor
-- BPMN Plugin : bpmn-plugin
-- Image Layouts : obsidian-image-layouts
-- Obsidian asciimath : obsidian-asciimath
-- Double Click Tab : double-click-tab
-- Scrybble : scrybble.ink
-- Auto Glossary : auto-glossary
-- SamePage : samepage
-- Numerals : numerals
-- AWS DynamoDB For Obsidian : obsidian-plugin-dynamodb
-- Hidden Folder : hidden-folder-obsidian
-- MAKE.md : make-md
-- Obsidian Markdown export : obsidian-markdown-export-plugin
-- Sync Graph Settings : sync-graph-settings
-- Writing : writing
-- Transcription : obsidian-transcription
-- Mindmap Nextgen : obsidian-mindmap-nextgen
-- External Link Opener : obsidian-link-opener
-- Obsidian Clipper : obsidian-clipper
-- ProZen : obsidian-prozen
-- Aggregator : obsidian-aggregator
-- Autoscroll : obsidian-autoscroll
-- Obsidian Stylist : obsidian-stylist
-- Text Dataset Aid Plugin : obsidian-dataset-aid
-- Chord Lyrics : chord-lyrics
-- Crumbs : crumbs-obsidian
-- D2 : d2-obsidian
-- Translate : translate
-- DMN Plugin : dmn-plugin
-- FuzzyTag : obsidian-fuzzytag
-- Project Garden : obsidian-project-garden
-- Workona To Obsidian : workona-to-obsidian
-- Read Later : obsidian-readlater
-- Surfing : surfing
-- Toggle Case : obsidian-toggle-case
-- Open Gate : open-gate
-- Canvas Presentation : canvas-presentation
-- Paste As HTML : obsidian-paste-as-html
-- File Forgetting Curve : file-forgetting-curve-obsidian
-- Base Tag Renderer : obsidian-basetag
-- Todo sort : todo-sort
-- Keyshots : keyshots
-- Wordy : obsidian-wordy
-- External Link Helper : obsidian-extlnkhelper-plugin
-- Local images plus : obsidian-local-images-plus
-- Google Photos : google-photos
-- WakaTime : obsidian-wakatime
-- Text Extractor : text-extractor
-- Review Notes Plugin : obsidian-review-notes-plugin
-- GPT Notes : gpt3-notes
-- Audio Notes : obsidian-audio-notes
-- Checklist Reset : obsidian-checklist-reset
-- Mermaid Tools : mermaid-tools
-- Boost Link Suggestions : boost-link-suggestions
-- Webpage HTML Export : webpage-html-export
-- File Color : obsidian-file-color
-- Set In Obsidian : set-in-obsidian
-- Hugo preview Obsidian : hugo-preview-obsidian
-- File Chucker : file-chucker
-- Hints Flow : hints-plugin
-- ArchiveBox : obsidian-archivebox-plugin
-- Quote Share : quote-share
-- Canvas Random Note : canvas-randomnote
-- Spoiler Block : spoiler-block-obsidian
-- Terminal : terminal
-- Contacts : obsidian-contacts
-- Vega Visualizations : obsidian-vega
-- Link Nodes in Canvas : link-nodes-in-canvas
-- Canvas CSS class : canvas-css-class
-- Smart Connections : smart-connections
-- Short links : short-internal-links-to-headings
-- Hyphenation : obsidian-hyphenation
-- S3 attachments storage : s3-attachments-storage
-- Order List : order-list
-- Audio Player : obsidian-audio-player
-- Task Marker : obsidian-task-marker
-- Weekly Review : weekly-review
-- Pending notes : obsidian-pending-notes
-- Email Block : email-block-plugin
-- Code Emitter : code-emitter
-- Plugin Groups : obsidian-plugin-groups
-- IVRE : obsidian-ivre-plugin
-- Canvas Conversation : obsidian-canvas-conversation
-- Image Captions : image-captions
-- The One Ring 2E Statblocks : tor2e-statblocks
-- Reference Map : reference-map
-- Khoj : khoj
-- Custom File Extensions and Types : obsidian-custom-file-extensions-plugin
-- Incremental ID : incremental-id
-- Canvas Mindmap : canvas-mindmap
-- Link Exploder : link-exploder
-- Cycle In Sidebar : cycle-in-sidebar
-- Adamantine Pick : adamantine-pick
-- Antidote Grammar Checker Integration : antidote-grammar-checker-integration
-- S3 Image Uploader : s3-image-uploader
-- Canvas Filter : canvas-filter
-- Note aliases : note-aliases
-- Text Wrapper : obs-text-wrapper
-- Kill and Yank : kill-and-yank
-- Double Colon Conceal : double-colon-conceal
-- 🪝 Grappling Hook : grappling-hook
-- Tag Search : tag-search
-- YTranscript : ytranscript
-- Habit Calendar : habit-calendar
-- Console Markdown Plugin : console
-- Quip : quip
-- Custom Classes : custom-classes
-- Babashka : babashka
-- DMN Eval : dmn-eval
-- Restore Tab Key : restore-tab-key
-- Omnivore : obsidian-omnivore
-- Inbox : inbox
-- Text Progress Bar : text-progress-bar
-- Reading comments : reading-comments
-- ProgressBar : progressbar
-- Kindle CSV Converter : kindle-csv-converter
-- Material Symbols : material-symbols
-- Unicode Search : unicode-search
-- Awesome Reader : awesome-reader
-- LaTeX Algorithms : latex-algorithms
-- Contextual Comments : contextual-comments
-- Heading Level Indent : heading-level-indent
-- Open files with commands : open-files-with-commands
-- No Empty Windows : no-empty-windows
-- Marp : marp
-- O2 : o2
-- Close Similar Tabs : close-similar-tabs
-- Create Note in Folder : create-note-in-folder
-- Apple Books Highlights : apple-books-highlights
-- MSG Handler : msg-handler
-- ObsiDOOM : obsidoom
-- Advanced Paste : advanced-paste
-- ActivityWatch : aw-watcher-obsidian
-- Mixa : mixa
-- Vextab : vextab
-- Callout Manager : callout-manager
-- Awesome Image : awesome-image
-- Callout Integrator : callout-integrator
-- Emoji Magic : emoji-magic
-- Optimize Canvas Connections : optimize-canvas-connections
-- Home tab : home-tab
-- ChatGPT MD : chatgpt-md
-- OpenWeather : open-weather
-- Emoji Titler : emoji-titler
-- Perilous Writing : perilous-writing
-- ibook : ibook
-- Floating Highlights : floating-highlights
-- Zen : zen
-- Fast Image Cleaner : nl-fast-image-cleaner
-- Fantasy Content Generator : fantasy-content-generator
-- Tasks Calendar Wrapper : tasks-calendar-wrapper
-- Awesome Brain Manager : awesome-brain-manager
-- Open In New Tab : open-in-new-tab
-- Commando : commando-command-repeater
-- File Publisher : file-publisher
-- Global Search and Replace : global-search-and-replace
-- Image Upload Toolkit : image-upload-toolkit
-- Gene 🧬 : gene-ai
-- LaTeX to Unicode converter : latex-to-unicode
-- Natural Language Syntax Highlighting : nl-syntax-highlighting
-- Focus Active Sentence : focus-active-sentence
-- Journal Review : journal-review
-- Brainframe : brainframe
-- Gemmy : gemmy
-- Source Code Note : source-code-note
-- Jelly Snippets : jelly-snippets
-- Prioritize : prioritize
-- Import/Export TiddlyWiki : tiddlywiki-import-export
-- Reveal file in explorer : reveal-file-in-explorer
-- Floating Search : float-search
-- Avatar : avatar
-- Meld Build : meld-build
-- Page Properties : page-properties
-- Testing Vault : testing-vault
-- Easy toggle sidebars : easy-toggle-sidebars
-- x86 Assembly Flow Graphing : x86-flow-graphing
-- Search Obsidian in Google : search-obsidian-in-google
-- OZ Calendar : oz-calendar
-- Send Tasks to OmniFocus : tasks-to-omnifocus
-- AI Commander : ai-commander
-- Pseudocode : pseudocode-in-obs
-- Advanced Merger : advanced-merger
-- Unfilled Stats Highlighter : unfilled-stats-highlighter
-- GPT Assistant : gpt-assistant
-- Companion : companion
-- Get Stock Information : get-stock-information
-- Frontmatter Alias Display : frontmatter-alias-display
-- Character Insertion : character-insertion
-- Whisper : whisper
-- Colorful Note Borders : colorful-note-borders
-- Code Files : code-files
-- Flashcard Learning : flashcard-learning
-- Any Block : any-block
-- WuCai highlights Official : wucai-highlights-official
-- File Order : file-order
-- No Tabs : no-tabs
-- Tab Rotator : tab-rotator
-- Bulk open selected links : bulkopen-selected-links
-- Semantic Search : bbawj-semantic-search
-- Select current line : select-current-line
-- Wikipedia Search : wikipedia-search
-- Vim Toggle : vim-toggle
-- Draw Harada Method : draw-harada-method
-- Marp Slides : marp-slides
-- Flomo Importer : flomo-importer
-- Tolino notes Importer : tolino-notes-import
-- Codeblock Customizer : codeblock-customizer
-- Auto Classifier : auto-classifier
-- AI Assistant : ai-assistant
-- Cron : cron
-- Tray : tray
-- Dynamic Timetable : dynamic-timetable
-- Soomda : obsidian-soomda
-- Vault name in status bar : vault-name-status-bar
-- Quickly : quickly
-- HK Code Block : hk-code-block
-- Tistory Poster : tistory-poster
-- Link Range : link-range
-- Ring a secretary : ring-a-secretary
-- Latex Matrices : latex-matrices
-- Smart Rename : smart-rename
-- Folder notes : folder-notes
-- Pocketbook Cloud Highlight Importer : pocketbook-cloud-highlight-importer
-- Pivotal Tracker Integration : pivotal-tracker-integration
-- File Diff : file-diff
-- text2anki-openai : text2anki-openai
-- Ultimate Todoist Sync : ultimate-todoist-sync
-- Reading View Enhancer : reading-view-enhancer
-- Crossbow : crossbow
-- Google Keep Import : google-keep-import
-- Image OCR : image-ocr
-- GPT-LiteInquirer : gpt-liteinquirer
-- Loom : loom
-- Links : links
-- Confluence Integration : confluence-integration
-- Copilot : copilot
-- GitHub Issue Augmentation : github-issue-augmentation
-- Persistent Links : persistent-links
-- Personal Assistant : personal-assistant
-- April's Automatic Timelines : aprils-automatic-timelines
-- AI Mentor : ai-mentor
-- Game Search : game-search
-- Linked Data Vocabularies : linked-data-vocabularies
-- Linked Data Helper : linked-data-helper
-- Show Diff : show-diff
-- Markdoc : markdoc
-- Colored Text : colored-text
-- Slide Note : slide-note
-- Chem : chem
-- Last Modified Timestamp in Status Bar : last-modified-timestamp-in-status-bar
-- Askify Sync : askify-obsidian-sync
-- Android nomedia : android-nomedia
-- Custom State for Task List : custom-state-for-task-list
-- Fuzzy Chinese Pinyin : fuzzy-chinese-pinyin
-- Auto Template Trigger : auto-template-trigger
-- Ketcher : ketcher
-- Open Plugin Settings : open-plugin-settings
-- MathLive : mathlive
-- Auto Hide Cursor : auto-hide-cursor
-- PubScale : pubscale
-- Rofi Helper : rofi-helper
-- Mood Tracker : mood-tracker
-- Plugin Manager : plugin-manager
-- Better MathJax : better-mathjax
-- Interlinear Glossing : ling-gloss
-- brAIn : brain
-- Sync Google Calendar : sync-google-calendar
-- Share to Cubox : share-to-cubox
-- Attachment Management : attachment-management
-- Chess Study : chess-study
-- Image To Lskypro : lskypro-auto-upload
-- Dendron Tree : dendron-tree
-- Silicon AI : silicon
-- Mermaid.js Helper (OMH) : mermaid-helper
-- Telegram Sync : telegram-sync
-- Pieces for Developers : pieces-for-developers
-- Blur : blur
-- Canvas Links : canvas-links
-- HamsterBase Official : hamsterbase
-- TodoTxt : todotxt
-- Arcana : arcana
-- Auto Anki : auto-anki
-- APIRequest : api-request
-- Link with alias : link-with-alias
-- HackerOne : hackerone
-- Confluence to Obsidian : confluence-to-obsidian
-- Flashcards LLM : flashcards-llm
-- Recipe Grabber : recipe-grabber
-- Note archiver : note-archiver
-- Iconoir Icons : iconoir-icons
-- Automatic List Styles : automatic-list-styles
-- Shukuchi : shukuchi
-- Chat Stream : chat-stream
-- BlindFold : blindfold-obsidian
-- Financial Doc : findoc
-- File Include : file-include
-- Vault Chat : vault-chat
-- Memos Sync : memos-sync
-- Mermaid Themes : mermaid-themes
-- Background Image : background-image
-- Html Server : html-server
-- Importer : obsidian-importer
-- Cloudinary : cloudinary
-- Flowershow : flowershow
-- Movie : movie-obsidian
-- Markdown Link Space Encoder : markdown-link-space-encoder
-- BMO Chatbot : bmo-chatbot
-- SupSub : supsub
-- Typst Renderer : typst
-- AI Notes Summary : ai-summary
-- Query all the things : qatt
-- Lilypond : lilypond
-- Chemical Structure Renderer : chemical-structure-renderer
-- Time Ruler : time-ruler
-- Logstravaganza : logstravaganza
-- Markdown Blogger : markdown-blogger
-- Simple RSS : simple-rss
-- Quick Links : quick-links
-- Editor Width Slider : editor-width-slider
-- Markdown Tree : markdown-tree
-- Auto Front Matter : auto-front-matter
-- EmoTagsTitler : emoji-tags-titler
-- Advanced Random Note : advanced-random-note
-- Git Url : git-url
-- Pathfinder 2E Action Icons : pf2-action-icons
-- Badges : badges
-- Readability Score : readability-score
-- Hide Folders : hide-folders
-- Style Importer : style-importer
-- APL Render : apl-render
-- Add an ID to the front matter : guid-front-matter
-- Due When : due-when
-- Style Text : style-text
-- Notes dater : notes-dater
-- Air Quotes : air-quotes
-- Vault 2 Book : vault-2-book
-- Markdown Chords : markdown-chords
-- Laws of Form : laws-of-form
-- Notes Sync Share : notes-sync-share
-- NAI 4 Obsidian : nai4obsidian
-- Password Protection : password-protection
-- LDS Scriptures Reference : lds-scriptures-reference
-- Edit History : edit-history
-- Google Bard Assistant : google-bard-assistant
-- Memorization : memorization
-- TinyPNG Image : tinypng-image
-- Code::Stats : codestats
-- CSS Editor : css-editor
-- Bulk Exporter : bulk-exporter
-- Code Styler : code-styler
-- Auto Hyperlink : auto-hyperlink
-- Quick Plugin Switcher : quick-plugin-switcher
-- Colored Tags : colored-tags
-- Markdown Sync Scroll : markdown-sync-scroll
-- Ruled template : ruled-template
-- AI Tools : ai-tools
-- oblogger : oblogger
-- Simple CanvaSearch : simple-canvasearch
-- ZettelGPT : zettelgpt
-- Invio : invio
-- Periodic PARA : periodic-para
-- Source Scanner : source-scanner
-- Markdown to Slack Message : markdown-to-slack-message
-- Micro templates : micro-templates
-- Poker : poker
-- Color Palette : color-palette
-- Link Tree : link-tree
-- Custom list character : custom-list-character
-- Arrows : arrows
-- ICS : ics
-- Fantasy name generator : fantasy-name
-- TagMany : tag-many
-- Better Search Views : better-search-views
-- Dida Todo Sync : dida-sync
-- Better Comment Toggle : better-comment-toggle
-- Mini Toolbar : mini-toolbar
-- SyncFTP : syncftp
-- Obligator : obligator
-- Fill in the Blank (FITB) : fill-in-the-blank
-- InlineCodeHighlight : inline-code-highlight
-- Index Checker : index-checker
-- Syncthing Integration : syncthing-integration
-- RunJS : runjs
-- Touch Bar Macros : touchbar-macros
-- Obsidiosaurus : obsidiosaurus
-- Quail : quail
-- GTD No Next Step : gtd-no-next-step
-- Safe Filename Linter : safe-filename-linter
-- Copy Inline Code : copy-inline-code
-- At People : at-people
-- ArchWiki Reader : archwiki-reader
-- Easy Bake : easy-bake
-- Yet Another Obsidian Synchronizer : yet-another-obsidian-synchronizer
-- Finnish Spellcheck : finnish-spellcheck
-- Execute Python : execute-python
-- Birthday-Tracker : birthday-tracker
-- Lovely-Mindmap : lovely-mindmap
-- LinkShelf : linkshelf
-- Modules : modules
-- CodeBlock Tabs : codeblock-tabs
-- MDX : mdx
-- Emacs text editor : emacs-text-editor
-- Waka time box : waka_time_box
-- Codename : codename
-- Speech To Text Keyboard Helper : speech2text-helper
-- Uncheck All : uncheck-all
-- Voice : voice
-- Cloze : cloze
-- Wikidata Importer : wikidata-importer
-- Copilot auto completion : copilot-auto-completion
-- Unitade : unitade
-- Python Scripter : python-scripter
-- Quick note : quicknote
-- Update frontmatter modified date : frontmatter-modified-date
-- Multi Tag : multi-tag
-- Zettelkasten LLM Tools : zettelkasten-llm-tools
-- Reflection : reflection
-- AI Research Assistant : ai-research-assistant
-- Wallabag : wallabag
-- Red Pen : red-pen
-- Zotero Sync : zotero-sync-client
-- Harpoon : harpoon
-- Nostr Writer : nostr-writer
-- Image Converter : image-converter
-- Data Entry : data-entry
-- @ Symbol Linking : at-symbol-linking
-- Attachment Manager : attachment-manager
-- Solve : solve
-- Nested tags graph : graph-nested-tags
-- YouVersion Linker : youversion-linker
-- Checkbox Reorder : checkbox-reorder
-- Gnome Terminal Loader : gnome-terminal-loader
-- Media Sync : media-sync
-- autoLiterature : auto-literature
-- Local Backup : local-backup
-- ChatGPT Definition : chatgpt-definitions
-- Postfix : postfix
-- Typing Assistant : typing-assistant
-- Excalidraw CN : excalidraw-cn
-- BattleSnake Board Viewer : battlesnake-viewer
-- MTG Card Links : mtg-card-links
-- Floccus Bookmarks to Markdown : floccus-bookmarks-to-markdown
-- Writeas Blog Publisher : writeas-publisher
-- Header Enhancer : header-enhancer
-- MLIR Syntax Highlight : mlir-syntax-highlight
-- Handwritten Notes : handwritten-notes
-- Flashcard Generator : flashcard-gen
-- Spreadsheets : spreadsheets
-- TickTick : ticktick
-- Webdav File Explorer : webdav-file-explorer
-- Sheets Extended : sheets
-- Auto Journal : auto-journal
-- Nifty Links : nifty-links
-- Exercises : exercises
-- Math Booster : math-booster
-- File Explorer++ : file-explorer-plus
-- Vox : vox
-- GitHub Embeds : github-embeds
-- Tenki : tenki
-- Tokei : tokei
-- Codeblock Template : codeblock-template
-- 2Hop Links Plus : 2hop-links-plus
-- Custom Font Loader : custom-font-loader
-- Pickly PageBlend : pickly-page-blend
-- AI Editor : ai-editor
+- [x] Natural Language Dates : nldates-obsidian
+- [x] Hotkeys++ : hotkeysplus-obsidian
+- [x] Obsidian Git : obsidian-git
+- [x] Paste URL into selection : url-into-selection
+- [x] Sliding Panes (Andy's Mode) : sliding-panes-obsidian
+- [x] Show Whitespace : cm-show-whitespace-obsidian
+- [x] Advanced Tables : table-editor-obsidian
+- [x] Leader Hotkeys : leader-hotkeys-obsidian
+- [x] Recent Files : recent-files-obsidian
+- [x] Ledger : ledger-obsidian
+- [x] Note Refactor : note-refactor-obsidian
+- [x] Calendar : calendar
+- [x] Text expand : mrj-text-expand
+- [x] Jump to link : mrj-jump-to-link
+- [x] Reading Time : obsidian-reading-time
+- [x] Todoist Sync Plugin : todoist-sync-plugin
+- [x] Vimrc Support : obsidian-vimrc-support
+- [x] Shortcuts extender : shortcuts-extender
+- [x] Add links to current note : mrj-crosslink-between-notes
+- [x] Quick Switcher++ : darlal-switcher-plus
+- [x] Day Planner : obsidian-day-planner
+- [x] Editor Syntax Highlight : cm-editor-syntax-highlight-obsidian
+- [x] Review : review-obsidian
+- [x] Hider : obsidian-hider
+- [x] Minimal Theme Settings : obsidian-minimal-settings
+- [x] Discord Rich Presence : obsidian-discordrpc
+- [x] Templater : templater-obsidian
+- [x] Convert url to preview (iframe) : convert-url-to-iframe
+- [x] Search++ : searchpp
+- [x] Better Word Count : better-word-count
+- [x] Workbench : workbench-obsidian
+- [x] Latex Environments : obsidian-latex-environments
+- [x] RTL Support : obsidian-rtl
+- [x] Markdown prettifier : markdown-prettifier
+- [x] css snippets : css-snippets
+- [x] Link indexer : obsidian-link-indexer
+- [x] macOS Keyboard Navigation : macOS-keyboard-nav-obsidian
+- [x] Extract Highlights : extract-highlights-plugin
+- [x] Find orphaned files and broken links : find-unlinked-files
+- [x] Wikilinks to MDLinks : wikilinks-to-mdlinks-obsidian
+- [x] Smart Random Note : smart-random-note
+- [x] Tab Switcher : cycle-through-panes
+- [x] ABC Music Notation : music-code-blocks
+- [x] Typewriter Scroll : cm-typewriter-scroll-obsidian
+- [x] Youglish Plugin : obsidian-youglish-plugin
+- [x] Dangling links : obsidian-dangling-links
+- [x] Dangerzone Writing : dangerzone-writing-plugin
+- [x] Maximise Active Pane : maximise-active-pane-obsidian
+- [x] Julian Date : obsidian-juliandate
+- [x] Emoji Toolbar : obsidian-emoji-toolbar
+- [x] Fullscreen Focus Mode : obsidian-fullscreen-plugin
+- [x] Footlinks : footlinks
+- [x] Mind Map : obsidian-mind-map
+- [x] Flashcards : flashcards-obsidian
+- [x] Completed Area : completed-area
+- [x] Citations : obsidian-citation-plugin
+- [x] Obsidian_to_Anki : obsidian-to-anki-plugin
+- [x] Rollover Daily Todos : obsidian-rollover-daily-todos
+- [x] Automatically reveal active file : obsidian-reveal-active-file
+- [x] Export To TeX : obsidian-export-to-tex
+- [x] Extended MathJax : obsidian-latex
+- [x] Apple Reminders : obsidian-apple-reminders-plugin
+- [x] Contextual Typography : obsidian-contextual-typography
+- [x] Neo4j Graph View : neo4j-graph-view
+- [x] Snippets plugin : snippets
+- [x] Temple : obsidian-temple
+- [x] Relative Line Numbers : obsidian-relative-line-numbers
+- [x] Obsidian Charts : obsidian-charts
+- [x] Discordian Theme : discordian-plugin
+- [x] Autocomplete : obsidian-autocomplete-plugin
+- [x] Completed Task Display : completed-task-display
+- [x] PDF Highlights : obsidian-extract-pdf-highlights
+- [x] YouHaveBeenStaring : youhavebeenstaring-plugin
+- [x] metatemplates : obsidian-metatemplates
+- [x] Imgur Plugin : obsidian-imgur-plugin
+- [x] Checklist : obsidian-checklist-plugin
+- [x] Text Expander : obsidian-text-expander
+- [x] Search on Internet : search-on-internet
+- [x] File path to URI : obsidian-file-path-to-uri
+- [x] Page Heading From Links : page-heading-from-links
+- [x] Icons : obsidian-icons-plugin
+- [x] Folder Note : folder-note-plugin
+- [x] Vantage - Advanced search builder : vantage-obsidian
+- [x] Sort & Permute lines : obsidian-sort-and-permute-lines
+- [x] Min3ditorHotkeys : obsidian-min3ditorhotkeys-plugin
+- [x] JSONifier : obsidian-jsonifier
+- [x] Things Logbook : things-logbook
+- [x] Hotkeys for Bookmarks : obsidian-shortcuts-for-starred-files
+- [x] Filename Heading Sync : obsidian-filename-heading-sync
+- [x] Obsidian Orthography : obsidian-orthography
+- [x] Obsidian Query Language : obsidian-query-language
+- [x] Markdown Formatting Assistant : obsidian-markdown-formatting-assistant-plugin
+- [x] Journey : obsidian-journey-plugin
+- [x] Tag Wrangler : tag-wrangler
+- [x] Better PDF Plugin : better-pdf-plugin
+- [x] Dataview : dataview
+- [x] Periodic Notes : periodic-notes
+- [x] Show Current File Path : obsidian-show-file-path
+- [x] PaperCut : obsidian-paper-cut
+- [x] Comments : obsidian-comments
+- [x] ini Editor : ini-obsidian
+- [x] Various Complements : various-complements
+- [x] Timelines : obsidian-timelines
+- [x] txt as md : txt-as-md-obsidian
+- [x] Note Folder Autorename : note-folder-autorename
+- [x] Daily Activity : daily-activity
+- [x] Daily Stats : obsidian-daily-stats
+- [x] Custom window title : open-note-to-window-title
+- [x] Meld Encrypt : meld-encrypt
+- [x] Vault Statistics : obsidian-vault-statistics-plugin
+- [x] Obsidian TODO | Text-based GTD : obsidian-plugin-todo
+- [x] Hotkeys for specific files : obsidian-hotkeys-for-specific-files
+- [x] CSV Editor : csv-obsidian
+- [x] Table of Contents : obsidian-plugin-toc
+- [x] Mochi Cards Exporter : mochi-cards-exporter
+- [x] Prettier Format : obsidian-plugin-prettier
+- [x] Furigana : obsidian-furigana
+- [x] Vault Changelog : obsidian-vault-changelog
+- [x] Chesser : chesser-obsidian
+- [x] Activity History : obsidian-activity-history
+- [x] Chessboard Viewer : obsidian-chessboard
+- [x] Footnote Shortcut : obsidian-footnotes
+- [x] Gallery : obsidian-gallery
+- [x] NoteTweet : notetweet
+- [x] Code block from selection : code-block-from-selection
+- [x] Format Hotkeys : format-hotkeys-obsidian
+- [x] Obsidian Leaflet : obsidian-leaflet-plugin
+- [x] Remember cursor position : remember-cursor-position
+- [x] Pane Relief : pane-relief
+- [x] DEVONlink : DEVONlink-obsidian
+- [x] Hotkey Helper : hotkey-helper
+- [x] Text Snippets : text-snippets-obsidian
+- [x] Consistent attachments and links : consistent-attachments-and-links
+- [x] PlantUML : obsidian-plantuml
+- [x] Open cards in imdone from Obsidian. : imdone-obsidian-plugin
+- [x] Spotlight : obsidian-spotlight
+- [x] Unique attachments : unique-attachments
+- [x] Dice Roller : obsidian-dice-roller
+- [x] LanguageTool Integration : obsidian-languagetool-plugin
+- [x] Commits : obsidian-commits
+- [x] Outliner : obsidian-outliner
+- [x] Extract url content : extract-url
+- [x] Find and replace in selection : find-and-replace-in-selection
+- [x] Buttons : buttons
+- [x] Admonition : obsidian-admonition
+- [x] Tracker : obsidian-tracker
+- [x] Hotkeys for templates : obsidian-hotkeys-for-templates
+- [x] Style Settings : obsidian-style-settings
+- [x] Advanced URI : obsidian-advanced-uri
+- [x] Fountain : obsidian-fountain
+- [x] Word Splitting for Simplified Chinese in Edit Mode and Vim Mode : cm-chs-patch
+- [x] Table Extended : table-extended
+- [x] Privacy Glasses : privacy-glasses
+- [x] Highlight Public Notes : obsidian-highlightpublicnotes-plugin
+- [x] Media Extended : media-extended
+- [x] Regex Pipeline : obsidian-regex-pipeline
+- [x] Juggl : juggl
+- [x] Spaced Repetition : obsidian-spaced-repetition
+- [x] Readwise Community : obsidian-readwise
+- [x] Obsidian Tabs : obsidian-tabs
+- [x] Icon Swapper : obsidian-icon-swapper
+- [x] mdx as md : mdx-as-md-obsidian
+- [x] Excalidraw : obsidian-excalidraw-plugin
+- [x] Auto Link Title : obsidian-auto-link-title
+- [x] Python lab : python-lab-plugin
+- [x] Kanban : obsidian-kanban
+- [x] Incremental Writing : obsidian-incremental-writing
+- [x] Kindle Highlights : obsidian-kindle-plugin
+- [x] Metatable : obsidian-metatable
+- [x] Ozan's Image in Editor Plugin : oz-image-plugin
+- [x] Recall : obsidian-recall
+- [x] Tidy Footnotes : obsidian-tidy-footnotes
+- [x] Beeminder Word Count Plugin : beeminder-word-count-plugin
+- [x] QR Code Generator Plugin : obsidian-qrcode-plugin
+- [x] Focus Mode : obsidian-focus-mode
+- [x] Underline : obsidian-underline
+- [x] Clear Unused Images : oz-clear-unused-images
+- [x] Markdown Furigana : obsidian-markdown-furigana
+- [x] 2Hop Links Plugin : obsidian-2hop-links-plugin
+- [x] Image auto upload Plugin : obsidian-image-auto-upload-plugin
+- [x] Org Mode : obsidian-org-mode
+- [x] Open Link With : obsidian-open-link-with
+- [x] Stopwatch Plugin : obsidian-stopwatch-plugin
+- [x] Supercharged Links : supercharged-links-obsidian
+- [x] 盘古 PanGu : obsidian-pangu
+- [x] Related Notes Finder : obsidian-related-notes-finder
+- [x] koncham workspace : koncham-workspace
+- [x] React Components : obsidian-react-components
+- [x] Tasks : obsidian-tasks-plugin
+- [x] Readwise Mirror : readwise-mirror
+- [x] Auto pair chinese symbol : obsidian-auto-pair-chinese-symbol
+- [x] Pomodoro : obsidian-pomodoro-plugin
+- [x] Fantasy Statblocks : obsidian-5e-statblocks
+- [x] Zoom : obsidian-zoom
+- [x] Collapse All : obsidian-collapse-all-plugin
+- [x] Charts View : obsidian-chartsview-plugin
+- [x] Dictionary : obsidian-dictionary-plugin
+- [x] Liquid Templates : liquid-templates
+- [x] Better footnote : better-fn
+- [x] Aut-O-Backups : obsidian-dropbox-backups
+- [x] MetaEdit : metaedit
+- [x] Static File Server : obsidian-static-file-server
+- [x] Easy Typing : easy-typing-obsidian
+- [x] Sidebar Expand on Hover : obsidian-sidebar-expand-on-hover
+- [x] Zoottelkeeper Plugin : zoottelkeeper-obsidian-plugin
+- [x] File Tree Alternative Plugin : file-tree-alternative
+- [x] Electron Window Tweaker : obsidian-electron-window-tweaker
+- [x] Smart Typography : obsidian-smart-typography
+- [x] Grandfather : obsidian-grandfather
+- [x] Text Format : obsidian-text-format
+- [x] Adjacency Matrix Maker : adjacency-matrix-maker
+- [x] Taskbone OCR : taskbone-ocr-plugin
+- [x] Gist : obsidian-gist
+- [x] Argument Map with Argdown : obsidian-argdown-plugin
+- [x] CSV Table : obsidian-csv-table
+- [x] Advanced New File : obsidian-advanced-new-file
+- [x] File Explorer Note Count : file-explorer-note-count
+- [x] Obsidian title index : obsidian-title-index
+- [x] QuickAdd : quickadd
+- [x] Pluck : obsidian-pluck
+- [x] Pandoc : obsidian-pandoc
+- [x] Habit Tracker : obsidian-habit-tracker
+- [ ] Amazing Marvin : obsidian-amazingmarvin-plugin
+- [ ] Status Bar Pomodoro Timer : obsidian-statusbar-pomo
+- [ ] Kroki : obsidian-kroki
+- [ ] Timeline : obsidian-timeline
+- [ ] Map View : obsidian-map-view
+- [ ] Copy Image and URL context menu : copy-url-in-preview
+- [ ] Initiative Tracker : initiative-tracker
+- [ ] Cursor Location : obsidian-cursor-location-plugin
+- [ ] Enhancing Mindmap : obsidian-enhancing-mindmap
+- [ ] Breadcrumbs : breadcrumbs
+- [ ] Open vault in VS Code : open-vscode
+- [ ] Image Uploader : obsidian-image-uploader
+- [ ] Garble Text : garble-text
+- [ ] Paste Mode : obsidian-paste-to-current-indentation
+- [ ] Obsimian Exporter : obsimian-exporter
+- [ ] Find & Replace in Selection : obsidian-find-and-replace-in-selection
+- [ ] Embedded Code Title : obsidian-embedded-code-title
+- [ ] Homepage : homepage
+- [ ] Random To-Do : obsidian-random-todo
+- [ ] Media Extended BiliBili Plugin : mx-bili-plugin
+- [ ] cMenu : cmenu-plugin
+- [ ] Daf Yomi : obsidian-daf-yomi
+- [ ] Markdown Attributes : markdown-attributes
+- [ ] WaveDrom : obsidian-wavedrom
+- [ ] Phone to Roam to Obsidian : phone-to-roam-to-obsidian
+- [ ] Budget WYSIWYG : obsidian-budget-wysiwyg
+- [ ] Pocket : obsidian-pocket
+- [ ] Obsidian42 - WordNet Dictionary : obsidian-wordnet-plugin
+- [ ] Multi-line Formatting : multi-line-formatting
+- [ ] Apply Patterns : obsidian-apply-patterns
+- [ ] Longform : longform
+- [ ] Readwise Official : readwise-official
+- [ ] Activity Logger : obsidian-activity-logger
+- [ ] Toggl Track : obsidian-toggl-integration
+- [ ] AidenLx's Folder Note : alx-folder-note
+- [ ] Hide Sidebars on Window Resize : obsidian-hide-sidebars-when-narrow
+- [ ] Linter : obsidian-linter
+- [ ] Number Headings : number-headings-obsidian
+- [ ] Force note view mode : obsidian-view-mode-by-frontmatter
+- [ ] File Explorer Markdown Titles : file-explorer-markdown-titles
+- [ ] Theme Picker : theme-picker
+- [ ] Emoji Shortcodes : emoji-shortcodes
+- [ ] Reminder : obsidian-reminder-plugin
+- [ ] Go to Line : obsidian-go-to-line
+- [ ] Open with : open-with
+- [ ] Editor Commands Remap : editor-commands-remap
+- [ ] Command Alias : obsidian-command-alias-plugin
+- [ ] Rich Links : obsidian-rich-links
+- [ ] Obsidian Anki Sync : ObsidianAnkiSync
+- [ ] Window Collapse : window-collapse
+- [ ] Relative Find : obsidian-relative-find
+- [ ] Image Toolkit : obsidian-image-toolkit
+- [ ] Shell commands : obsidian-shellcommands
+- [ ] Hover External Link : hover-external-link
+- [ ] CodeMirror Options : obsidian-codemirror-options
+- [ ] Code Block Enhancer : obsidian-code-block-enhancer
+- [ ] Copy Block Link : obsidian-copy-block-link
+- [ ] Diagrams : drawio-obsidian
+- [ ] Vim Input Method Switch : obsidian-vim-im-switch-plugin
+- [ ] Luhman : luhman
+- [ ] Daily Named Folder : obsidian-daily-named-folder
+- [ ] Obsidian Trello : obsidian-trello
+- [ ] Annotator : obsidian-annotator
+- [ ] CustomJS : customjs
+- [ ] Random Structural Diary : random-structural-diary-plugin
+- [ ] Better File Link : obsidian-file-link
+- [ ] Quick Explorer : quick-explorer
+- [ ] Banners : obsidian-banners
+- [ ] Obsidian42 - Jump-to-Date : obsidian-jump-to-date-plugin
+- [ ] Icon Folder : obsidian-icon-folder
+- [ ] Ghost Fade Focus : ghost-fade-focus
+- [ ] Folder Note Core : folder-note-core
+- [ ] Jupyter : obsidian-jupyter
+- [ ] HackerNews : obsidian-hackernews
+- [ ] Reset Font Size : obsidian-reset-font-size
+- [ ] Podcast Note : podcast-note
+- [ ] Stille : obsidian-stille
+- [ ] Obsidian markmind : obsidian-markmind
+- [ ] Carry-Forward : obsidian-carry-forward
+- [ ] Archiver : obsidian-task-archiver
+- [ ] Card View Mode : obsidian-card-view-mode
+- [ ] Scales and Chords : scales-chords
+- [ ] Enhance Copy Note : copy-note
+- [ ] Customizable Menu : customizable-menu
+- [ ] Workspaces Plus : workspaces-plus
+- [ ] Simple Embeds : simple-embeds
+- [ ] ReadItLater : obsidian-read-it-later
+- [ ] Obsidian42 - Text Transporter : obsidian42-text-transporter
+- [ ] MarginNote Companion : marginnote-companion
+- [ ] Netwik : netwik
+- [ ] Prominent Bookmarked Files : obsidian-prominent-starred-files
+- [ ] OzanShare Publish : ozanshare-publish
+- [ ] Code Editor Shortcuts : obsidian-editor-shortcuts
+- [ ] Task Collector (TC) : obsidian-task-collector
+- [ ] Metadata Extractor : metadata-extractor
+- [ ] Quick LaTeX for Obsidian : quick-latex
+- [ ] Itinerary : obsidian-itinerary
+- [ ] URI Commands : uri-commands
+- [ ] Update time on edit : update-time-on-edit
+- [ ] Nomnoml Diagram : obsidian-nomnoml-diagram
+- [ ] Map of Content : map-of-content
+- [ ] Local images : obsidian-local-images
+- [ ] Vocabulary View : obsidian-vocabulary-view
+- [ ] Obsidian42 - BRAT : obsidian42-brat
+- [ ] Snippet Commands : snippet-commands-obsidian
+- [ ] JavaScript Init : obsidian-javascript-init
+- [ ] Key Promoter : key-promoter
+- [ ] Self-hosted LiveSync : obsidian-livesync
+- [ ] Plotly : obsidian-plotly
+- [ ] Wikipedia : obsidian-wikipedia
+- [ ] Lumberjack 🪓 🪵 : lumberjack-obsidian
+- [ ] Obsidian Link Converter : obsidian-link-converter
+- [ ] MySnippets : mysnippets-plugin
+- [ ] Hypothes.is : obsidian-hypothesis-plugin
+- [ ] Another Quick Switcher : obsidian-another-quick-switcher
+- [ ] Link Headers Directly : link-headers-directly
+- [ ] Meld Calc : meld-calc
+- [ ] Tabout : tabout
+- [ ] Fantasy Calendar : fantasy-calendar
+- [ ] Improved VimCursor : improved-vimcursor
+- [ ] Quote of the Day : quote-of-the-day
+- [ ] Limelight : obsidian-limelight
+- [ ] Prompt : prompt
+- [ ] Link Archive : obsidian-link-archive
+- [ ] Obsidian Chess : obsidian-chess
+- [ ] HTML Tags Autocomplete : obsidian-html-tags-autocomplete
+- [ ] Advanced Cursors : advanced-cursors
+- [ ] Stenography : stenography-obsidian
+- [ ] Obsidian Webhooks : obsidian-webhooks
+- [ ] Tweet to Markdown : obsidian-tweet-to-markdown
+- [ ] Habitica Sync : obsidian-habitica-integration
+- [ ] Oura Ring : obsidian-oura-plugin
+- [ ] Metacopy & URL : obsidian-metacopy
+- [ ] Image Caption : obsidian-image-caption
+- [ ] Graph Analysis : graph-analysis
+- [ ] Custom Attachment Location : obsidian-custom-attachment-location
+- [ ] Cryptsidian : cryptsidian
+- [ ] Crypto Lookup : obsidian-crypto-lookup
+- [ ] Copy as LaTeX : copy-as-latex
+- [ ] Auto Split : obsidian-auto-split
+- [ ] Word Sprint : obsidian-word-sprint
+- [ ] Publish and GitHub URL : copy-publish-url
+- [ ] CardBoard : card-board
+- [ ] Bible Reference : obsidian-bible-reference
+- [ ] Sentence Navigator : obsidian-sentence-navigator
+- [ ] Language Translator : language-translator
+- [ ] Auto Class : auto-class
+- [ ] Obsidian Cloudinary Uploader : obsidian-cloudinary-uploader
+- [ ] RSS Reader : rss-reader
+- [ ] Mousewheel Image zoom : mousewheel-image-zoom
+- [ ] Flexible Pomodoro For Obsidian : obsidian-flexible-pomo
+- [ ] Lineup Builder : obsidian-lineup-builder
+- [ ] Reveal Active File Button : reveal-active-file-button
+- [ ] Structured Plugin : obsidian-structured-plugin
+- [ ] CookLang Editor : cooklang-obsidian
+- [ ] Highlightr : highlightr-plugin
+- [ ] Remotely Save : remotely-save
+- [ ] From Template : obsidian-notes-from-template
+- [ ] Overdue : obsidian-overdue
+- [ ] Dialogue : obsidian-dialogue-plugin
+- [ ] Title Serial Number Plugin : obsidian-title-serial-number-plugin
+- [ ] Theme Design Utilities : obsidian-theme-design-utilities
+- [ ] Generic Initiative Tracker : generic-initiative-tracker
+- [ ] AnkiBridge : obsidian-ankibridge
+- [ ] Tressel Sync for Obsidian : obsidian-tressel
+- [ ] Second Window : image-window
+- [ ] Text to Speech : obsidian-tts
+- [ ] Link Favicons : link-favicon
+- [ ] Get Info : get-info-plugin
+- [ ] Matter : matter
+- [ ] Regex Find/Replace : obsidian-regex-replace
+- [ ] WordPress : obsidian-wordpress
+- [ ] Icon Shortcodes : obsidian-icon-shortcodes
+- [ ] TagFolder : obsidian-tagfolder
+- [ ] Advanced Slides : obsidian-advanced-slides
+- [ ] Obsidian Graphviz : obsidian-graphviz
+- [ ] Vim IM Select : vim-im-select
+- [ ] Emotion Picker : obsidian-emotion-picker
+- [ ] Quoth : quoth
+- [ ] Metronome : obsidian-metronome-plugin
+- [ ] Plaintext : obsidian-plaintext
+- [ ] Wrap with shortcuts : obsidian-wrap-with-shortcuts
+- [ ] Tomorrow's Daily Note : obsidian-tomorrows-daily-note
+- [ ] Rant-Lang : obsidian-rant
+- [ ] Smarter Markdown Hotkeys : obsidian-smarter-md-hotkeys
+- [ ] Global Hotkeys : obsidian-global-hotkeys
+- [ ] TimeStamper : obsidian-timestamper
+- [ ] JSON/CSV Importer : obsidian-import-json
+- [ ] Import Foundry VTT journal entries : import-foundry
+- [ ] Attachment Name Formatting : obsidian-attachment-name-formatting
+- [ ] Completr : obsidian-completr
+- [ ] Binary File Manager : obsidian-binary-file-manager-plugin
+- [ ] Local File Interface : obsidian-local-file-interface-plugin
+- [ ] Siteswap : obsidian-siteswap
+- [ ] ObsidianTweaks : obsidian-tweaks
+- [ ] Obsidian Memos : obsidian-memos
+- [ ] PARA Shortcuts : para-shortcuts
+- [ ] 13th Age Statblocks : 13th-age-statblocks
+- [ ] Dynamic Highlights : obsidian-dynamic-highlights
+- [ ] KOReader Highlights : obsidian-koreader-plugin
+- [ ] Snippetor : obsidian-snippetor
+- [ ] Sortable : obsidian-sortable
+- [ ] Weather Fetcher : weather-fetcher
+- [ ] Lock Screen : obsidian-lock-screen-plugin
+- [ ] Pinboard Sync : pinboard-sync
+- [ ] Shortcut Launcher : obsidian-shortcut-launcher
+- [ ] File Info Panel : obsidian-file-info-plugin
+- [ ] Topic Linking : obsidian-topic-linking
+- [ ] Multi-Column Markdown : multi-column-markdown
+- [ ] Copy as HTML : copy-as-html
+- [ ] Frontmatter Tag Suggest : obsidian-frontmatter-tag-suggest
+- [ ] Simple Note Quiz : simple-note-quiz
+- [ ] Local REST API : obsidian-local-rest-api
+- [ ] Code Block Labels : obsidian-codeblock-labels
+- [ ] Better Command Palette : obsidian-better-command-palette
+- [ ] Relativenumber (relative line numbers) : obsidian-relativenumber
+- [ ] Core Search Assistant : obsidian-core-search-assistant-plugin
+- [ ] Save as Gist : obsidian-save-as-gist
+- [ ] Divide & Conquer : obsidian-divide-and-conquer
+- [ ] Excel to Markdown Table : obsidian-excel-to-markdown-table
+- [ ] Power Search : obsidian-power-search
+- [ ] Tag, Word & Link Cloud : tag-word-cloud
+- [ ] Persistent Graph : persistent-graph
+- [ ] Auto Note Mover : auto-note-mover
+- [ ] Insert Heading Link : insert-heading-link
+- [ ] Settings Search : settings-search
+- [ ] Word Splitting for Japanese in Edit Mode : japanese-word-splitter
+- [ ] AidenLx's Folder Note - folderv Component : alx-folder-note-folderv
+- [ ] Chevereto Image Uploader : obsidian-chevereto-image-uploader
+- [ ] Todoist Text : todoist-text
+- [ ] Big Calendar : big-calendar
+- [ ] Command Palette-- : obsidian-command-palette-minus-plugin
+- [ ] Remember File State : obsidian-remember-file-state
+- [ ] Things Link : obsidian-things-link
+- [ ] Markdown shortcuts : markdown-shortcuts
+- [ ] Digital Garden : digitalgarden
+- [ ] Living Graph : obsidian-living-graph
+- [ ] Hotkeys Chords : obsidian-hotkeys-chords
+- [ ] Key Sequence Shortcut : obsidian-key-sequence-shortcut
+- [ ] Full Calendar : obsidian-full-calendar
+- [ ] Heatmap Calendar : heatmap-calendar
+- [ ] Daily notes opener : obsidian-daily-notes-opener
+- [ ] Mark and Select : obsidian-mark-and-select
+- [ ] Bible Linker : obsidian-bible-linker
+- [ ] Obsidian CircuitJS : obsidian-circuitjs
+- [ ] Creases : creases
+- [ ] Kobo Highlights Importer : obsidian-kobo-highlights-importer-plugin
+- [ ] Dynamic Embed : obsidian-dynamic-embed
+- [ ] Steemit : obsidian-steemit
+- [ ] Kindle Export : obsidian-kindle-export
+- [ ] Search Everywhere : obsidian-search-everywhere-plugin
+- [ ] Text Generator : obsidian-textgenerator-plugin
+- [ ] Markdown Table Editor : markdown-table-editor
+- [ ] Vim Multibyte Char Search : obsidian-vim-multibyte-char-search
+- [ ] Extract PDF Annotations : obsidian-extract-pdf-annotations
+- [ ] File Cleaner : obsidian-file-cleaner
+- [ ] Card View Switcher : obsidian-card-view-switcher-plugin
+- [ ] Novel Word Count : novel-word-count
+- [ ] Navigate Cursor History : heycalmdown-navigate-cursor-history
+- [ ] Obsidian matrix : obsidian-matrix
+- [ ] Waypoint : waypoint
+- [ ] Hover Editor : obsidian-hover-editor
+- [ ] Screwdriver : obsidian-screwdriver
+- [ ] Version History Diff (Sync, File Recovery & Git) : obsidian-version-history-diff
+- [ ] Format code blocks of various languages : obsidian-format-code
+- [ ] Buttondown : obsidian-buttondown-plugin
+- [ ] Lapel : lapel
+- [ ] Desmos : obsidian-desmos
+- [ ] Custom Frames : obsidian-custom-frames
+- [ ] Etherpad Lite : obsidian-etherpad-plugin
+- [ ] Quiet Outline : obsidian-quiet-outline
+- [ ] Daily Notes Viewer : obsidian-daily-notes-viewer
+- [ ] Zotero Integration : obsidian-zotero-desktop-connector
+- [ ] Telegraph Publish : obsidian-telegraph-publish
+- [ ] Path Title : obsidian-path-title
+- [ ] Jira Issue : obsidian-jira-issue
+- [ ] Smort : smort-obsidian
+- [ ] Control Characters : control-characters
+- [ ] AsciiDoc Blocks Plugin : obsidian-asciidoc-blocks
+- [ ] Fleeting Notes Sync : fleeting-notes-obsidian
+- [ ] Chat View : obsidian-chat-view
+- [ ] Doubleshift : obsidian-doubleshift
+- [ ] List Modified : obsidian-list-modified
+- [ ] Latex Suite : obsidian-latex-suite
+- [ ] Better CodeBlock : obsidian-better-codeblock
+- [ ] Wordnik Definitions : obsidian-wordnik
+- [ ] Typing speed : typing-speed
+- [ ] Google Tasks : obsidian-google-tasks
+- [ ] Obsidian jTab : obsidian-jtab
+- [ ] Book Search : obsidian-book-search-plugin
+- [ ] Paste image rename : obsidian-paste-image-rename
+- [ ] Scroll Offset : obsidian-scroll-offset
+- [ ] Obsius Publish : obsius-publish
+- [ ] Execute Code : execute-code
+- [ ] Obsidian Badge : obsidian-badge
+- [ ] Korean Book Info Plugin : kr-book-info-plugin
+- [ ] Drag-n-Drop for blocks : obsidian-drag-n-drop-plugin
+- [ ] Link Embed : obsidian-link-embed
+- [ ] Obsidian Columns : obsidian-columns
+- [ ] Github Publisher : obsidian-mkdocs-publisher
+- [ ] Notion Video Embed : obsidian-notion-video
+- [ ] Obsidian Math+ : obsidian-math-plus
+- [ ] Todoist Link : obsidian-todoist-link
+- [ ] Rewarder : obsidian-rewarder
+- [ ] Calibre : obsidian-calibre-plugin
+- [ ] Omnisearch : omnisearch
+- [ ] Plugins Galore : plugins-galore
+- [ ] Auto Card Link : auto-card-link
+- [ ] DataLoom : notion-like-tables
+- [ ] AutoMOC : auto-moc
+- [ ] Paste image Png to Jpeg : obsidian-paste-png-to-jpeg
+- [ ] Folder Index : obsidian-folder-index
+- [ ] Filename Emoji Remover : obsidian-filename-emoji-remover
+- [ ] ePub Reader : obsidian-epub-plugin
+- [ ] Pandoc Reference List : obsidian-pandoc-reference-list
+- [ ] Obsidian Enhancing Export : obsidian-enhancing-export
+- [ ] Enlightenment : enlightenment-obsidian
+- [ ] Release Timeline : obsidian-release-timeline
+- [ ] Folder Focus Mode : obsidian-folder-focus-mode
+- [ ] BBCode Convertor : obsidian-bbcode
+- [ ] Upcoming : obsidian-upcoming
+- [ ] Nuke Orphans : nuke-orphans
+- [ ] Front Matter Title : obsidian-front-matter-title-plugin
+- [ ] Bellboy : obsidian-bellboy
+- [ ] Function Plot : obsidian-functionplot
+- [ ] Note Auto Creator : obsidian-note-autocreator
+- [ ] Local Quotes : local-quotes
+- [ ] Yaml Manager : obsidian-state-switcher
+- [ ] Media DB Plugin : obsidian-media-db-plugin
+- [ ] Sequence Hotkeys : obsidian-sequence-hotkeys
+- [ ] Packrat : tasks-packrat-plugin
+- [ ] ExcaliBrain : excalibrain
+- [ ] Expand Bullet : obsidian-expand-bullet
+- [ ] DB Folder : dbfolder
+- [ ] Advanced Codeblock : obsidian-advanced-codeblock
+- [ ] Booksidian : booksidian-plugin
+- [ ] Simple Dice Roller : simple-dice-roller
+- [ ] Obsidian Camera : obsidian-camera
+- [ ] Markbase for Obsidian : obsidian-markbase
+- [ ] User Plugins : obsidian-user-plugins
+- [ ] Timestamp Notes : obsidian-timestamp-notes
+- [ ] Linkify : linkify
+- [ ] braincache : braincache
+- [ ] Share as Gist : obsidian-share-as-gist
+- [ ] Code Block : code-block-plugin
+- [ ] Google Calendar and Contacts Lookup : obsidian-google-lookup
+- [ ] Stack Overflow Answers : obsidian-stack-overflow
+- [ ] Redirect : obsidian-redirect
+- [ ] Zotero Bridge : zotero-bridge
+- [ ] Wielder : wielder
+- [ ] Obsidian shared to Notion : obsidian-to-notion
+- [ ] Image Gallery : obsidian-image-gallery
+- [ ] Thumbnails : obsidian-thumbnails
+- [ ] Table to CSV Exporter : obsidian-table-to-csv-exporter
+- [ ] Task Progress Bar : obsidian-task-progress-bar
+- [ ] Scroll Speed : scroll-speed
+- [ ] Translator : obsidian-translator
+- [ ] echarts : obsidian-echarts
+- [ ] Diagrams.net : obsidian-diagrams-net
+- [ ] Weread Plugin : obsidian-weread-plugin
+- [ ] PostgreSQL Obsidian : postgresql-obsidian
+- [ ] Zotero Link : zotero-link
+- [ ] Obsidian GoLinks : obsidian-golinks
+- [ ] Habit Tracker : habit-tracker
+- [ ] Typing Transformer : typing-transformer-obsidian
+- [ ] List Callouts : obsidian-list-callouts
+- [ ] Inline Scripts : obsidian-text-expander-js
+- [ ] Metadata Menu : metadata-menu
+- [ ] TimeDiff plugin : obsidian-plugin-time-diff
+- [ ] Trim Whitespace : obsidian-trim-whitespace
+- [ ] Ninja Cursor : ninja-cursor
+- [ ] Commander : cmdr
+- [ ] Obsidian Attendance : obsidian-attendance
+- [ ] File Hider : OA-file-hider
+- [ ] Path Finder : obsidian-path-finder
+- [ ] Focus and Highlight : obsidian-focus-plugin
+- [ ] File Cooker : obsidian-file-cooker
+- [ ] Hard Breaks : hard-breaks
+- [ ] Open Related Url : open-related-url
+- [ ] PodNotes : podnotes
+- [ ] Meeting notes : obsidian-meeting-notes
+- [ ] Tagged Documents Viewer : obsidian-plugin-tagged-documents-viewer
+- [ ] Simple Note Review : simple-note-review
+- [ ] Better Inline Fields : better-inline-fields
+- [ ] No Dupe Leaves : no-dupe-leaves
+- [ ] Open File by Magic Date : obsidian-open-file-by-magic-date
+- [ ] Heading Shifter : obsidian-heading-shifter
+- [ ] Group Snippets : obsidian-group-snippets
+- [ ] Raindrop Highlights : obsidian-raindrop-highlights
+- [ ] Note Linker : obisidian-note-linker
+- [ ] Dashing Cursor : obsidian-dashing-cursor
+- [ ] QuickShare : obsidian-quickshare
+- [ ] RPG Manager : rpg-manager
+- [ ] Literate Haskell : literate-haskell
+- [ ] Embed Code File : embed-code-file
+- [ ] Bulk Rename : obsidian-bulk-rename-plugin
+- [ ] Agile Task Notes : obsidian-agile-task-notes
+- [ ] Default New Tab Page : new-tab-default-page
+- [ ] Open In Other Editor : obsidian-open-in-other-editor
+- [ ] Simple Mention : obsidian-simple-mention
+- [ ] Auto Hide : obsidian-auto-hide
+- [ ] Janitor : janitor
+- [ ] Script Launcher : script-launcher
+- [ ] Party🎉 : obsidian-party
+- [ ] Day and Night : obsidian-day-and-night
+- [ ] TikZJax : obsidian-tikzjax
+- [ ] Todoist completed tasks : todoist-completed-tasks-plugin
+- [ ] Quick snippets and navigation : quick-snippets-and-navigation
+- [ ] Google Calendar : google-calendar
+- [ ] Copy Search URL : obsidian-copy-search-url
+- [ ] Super Simple Time Tracker : simple-time-tracker
+- [ ] Blockquote Levels : blockquote-levels
+- [ ] Custom File Explorer sorting : custom-sort
+- [ ] Table Generator : obsidian-table-generator
+- [ ] Aosr : aosr
+- [ ] Meta Bind Plugin : obsidian-meta-bind-plugin
+- [ ] Micro.publish : microblog-publish-plugin
+- [ ] Sakana Widget : obsidian-sakana-widget
+- [ ] Min Width : obsidian-min-width
+- [ ] Onyx Boox Annotation & Highlight Extractor : onyx-boox-extractor
+- [ ] Chronology : chronology
+- [ ] Duplicate Line : duplicate-line
+- [ ] ToggleList : obsidian-toggle-list
+- [ ] Squiggle : squiggle
+- [ ] Theme Toggler : obsidian-theme-toggler
+- [ ] Influx : influx
+- [ ] Week Planner : obsidian-week-planner
+- [ ] HTML Reader : obsidian-html-plugin
+- [ ] Dynamic RTL : dynamic-rtl
+- [ ] MathLinks : mathlinks
+- [ ] Note Synchronizer : note-synchronizer
+- [ ] URL Namer : url-namer
+- [ ] Douban : obsidian-douban-plugin
+- [ ] Image Inserter : insert-unsplash-image
+- [ ] Keyboard Analyzer : keyboard-analyzer
+- [ ] Plugin Update Tracker : obsidian-plugin-update-tracker
+- [ ] Update Relative Links : update-relative-links
+- [ ] Readavocado Sync : readavocado-sync
+- [ ] Repeat : repeat-plugin
+- [ ] Actions URI : actions-uri
+- [ ] Projects : obsidian-projects
+- [ ] Dynamic Background : obsidian-dynamic-background
+- [ ] Note Content Pusher : obsidian-note-content-pusher
+- [ ] Tag Summary : tag-summary-plugin
+- [ ] Alias from heading : obsidian-alias-from-heading
+- [ ] Obsidian OCR : obsidian-ocr
+- [ ] GitLab Issues : obsidian-gitlab-issues
+- [ ] Account Linker : obsidian-account-linker
+- [ ] Symbols Prettifier : symbols-prettifier
+- [ ] Obsidian MtG : obsidian-mtg
+- [ ] Addional Markdown suffix (.mdx/.svx). : obsidian-markdown-file-suffix
+- [ ] Editing Toolbar : editing-toolbar
+- [ ] Floating TOC : floating-toc
+- [ ] Checkbox 3 states : obsidian-checkbox3states-plugin
+- [ ] Status Bar Quote : status-bar-quote
+- [ ] qmd as md : qmd-as-md-obsidian
+- [ ] Obsidian to Flomo : obsidian-to-flomo
+- [ ] Obsidian Things3 Sync : obsidian-things3-sync
+- [ ] Mathpad : mathpad
+- [ ] Ordered List Style : list-style
+- [ ] Trash Explorer : obsidian-trash-explorer
+- [ ] Vika Sync : vika-sync
+- [ ] New Note New Window : obsidian-new-note-new-window
+- [ ] Awesome Flashcard : obsidian-awesome-flashcard
+- [ ] Daily Note Outline : obsidian-daily-note-outline
+- [ ] Edit Gemini : edit-gemini
+- [ ] Pretty BibTeX : obsidian-pretty-bibtex
+- [ ] Frontmatter Links : frontmatter-links
+- [ ] Ava : ava
+- [ ] Scroll to Top Plugin : obsidian-scroll-to-top-plugin
+- [ ] Old Note Admonitor : obsidian-old-note-admonitor
+- [ ] Export Image plugin : obsidian-export-image
+- [ ] Page Gallery : page-gallery
+- [ ] Obsidian42 - Strange New Worlds : obsidian42-strange-new-worlds
+- [ ] Dynbedded : obsidian-dynbedded
+- [ ] Copy document as HTML : copy-document-as-html
+- [ ] Chorded Hotkeys : obsidian-chorded-hotkeys
+- [ ] Dirtreeist : obsidian-dirtreeist
+- [ ] Obsidian Handlebars Template Plugin : obsidian-handlebars
+- [ ] 3D Graph : 3d-graph
+- [ ] Relation Pane : obsidian-relation-pane
+- [ ] Rapid Notes : obsidian-rapid-notes
+- [ ] Emo : emo-uploader
+- [ ] DeepL : deepl
+- [ ] Quran Lookup : obsidian-quran-lookup
+- [ ] Sigma : sigma
+- [ ] Better Reading Mode : better-reading-mode
+- [ ] New Bullet With Time : obsidian-new-bullet-with-time
+- [ ] Markdown to Jira Converter : obsidian-md-to-jira
+- [ ] Achievements : obsidian-achievements
+- [ ] Code Preview : obsidian-code-preview
+- [ ] Toggle Meta Yaml : obsidian-toggle-meta-yaml-plugin
+- [ ] Smart Links : obsidian-smart-links
+- [ ] Daily Notes Editor : daily-notes-editor
+- [ ] BPMN Plugin : bpmn-plugin
+- [ ] Image Layouts : obsidian-image-layouts
+- [ ] Obsidian asciimath : obsidian-asciimath
+- [ ] Double Click Tab : double-click-tab
+- [ ] Scrybble : scrybble.ink
+- [ ] Auto Glossary : auto-glossary
+- [ ] SamePage : samepage
+- [ ] Numerals : numerals
+- [ ] AWS DynamoDB For Obsidian : obsidian-plugin-dynamodb
+- [ ] Hidden Folder : hidden-folder-obsidian
+- [ ] MAKE.md : make-md
+- [ ] Obsidian Markdown export : obsidian-markdown-export-plugin
+- [ ] Sync Graph Settings : sync-graph-settings
+- [ ] Writing : writing
+- [ ] Transcription : obsidian-transcription
+- [ ] Mindmap Nextgen : obsidian-mindmap-nextgen
+- [ ] External Link Opener : obsidian-link-opener
+- [ ] Obsidian Clipper : obsidian-clipper
+- [ ] ProZen : obsidian-prozen
+- [ ] Aggregator : obsidian-aggregator
+- [ ] Autoscroll : obsidian-autoscroll
+- [ ] Obsidian Stylist : obsidian-stylist
+- [ ] Text Dataset Aid Plugin : obsidian-dataset-aid
+- [ ] Chord Lyrics : chord-lyrics
+- [ ] Crumbs : crumbs-obsidian
+- [ ] D2 : d2-obsidian
+- [ ] Translate : translate
+- [ ] DMN Plugin : dmn-plugin
+- [ ] FuzzyTag : obsidian-fuzzytag
+- [ ] Project Garden : obsidian-project-garden
+- [ ] Workona To Obsidian : workona-to-obsidian
+- [ ] Read Later : obsidian-readlater
+- [ ] Surfing : surfing
+- [ ] Toggle Case : obsidian-toggle-case
+- [ ] Open Gate : open-gate
+- [ ] Canvas Presentation : canvas-presentation
+- [ ] Paste As HTML : obsidian-paste-as-html
+- [ ] File Forgetting Curve : file-forgetting-curve-obsidian
+- [ ] Base Tag Renderer : obsidian-basetag
+- [ ] Todo sort : todo-sort
+- [ ] Keyshots : keyshots
+- [ ] Wordy : obsidian-wordy
+- [ ] External Link Helper : obsidian-extlnkhelper-plugin
+- [ ] Local images plus : obsidian-local-images-plus
+- [ ] Google Photos : google-photos
+- [ ] WakaTime : obsidian-wakatime
+- [ ] Text Extractor : text-extractor
+- [ ] Review Notes Plugin : obsidian-review-notes-plugin
+- [ ] GPT Notes : gpt3-notes
+- [ ] Audio Notes : obsidian-audio-notes
+- [ ] Checklist Reset : obsidian-checklist-reset
+- [ ] Mermaid Tools : mermaid-tools
+- [ ] Boost Link Suggestions : boost-link-suggestions
+- [ ] Webpage HTML Export : webpage-html-export
+- [ ] File Color : obsidian-file-color
+- [ ] Set In Obsidian : set-in-obsidian
+- [ ] Hugo preview Obsidian : hugo-preview-obsidian
+- [ ] File Chucker : file-chucker
+- [ ] Hints Flow : hints-plugin
+- [ ] ArchiveBox : obsidian-archivebox-plugin
+- [ ] Quote Share : quote-share
+- [ ] Canvas Random Note : canvas-randomnote
+- [ ] Spoiler Block : spoiler-block-obsidian
+- [ ] Terminal : terminal
+- [ ] Contacts : obsidian-contacts
+- [ ] Vega Visualizations : obsidian-vega
+- [ ] Link Nodes in Canvas : link-nodes-in-canvas
+- [ ] Canvas CSS class : canvas-css-class
+- [ ] Smart Connections : smart-connections
+- [ ] Short links : short-internal-links-to-headings
+- [ ] Hyphenation : obsidian-hyphenation
+- [ ] S3 attachments storage : s3-attachments-storage
+- [ ] Order List : order-list
+- [ ] Audio Player : obsidian-audio-player
+- [ ] Task Marker : obsidian-task-marker
+- [ ] Weekly Review : weekly-review
+- [ ] Pending notes : obsidian-pending-notes
+- [ ] Email Block : email-block-plugin
+- [ ] Code Emitter : code-emitter
+- [ ] Plugin Groups : obsidian-plugin-groups
+- [ ] IVRE : obsidian-ivre-plugin
+- [ ] Canvas Conversation : obsidian-canvas-conversation
+- [ ] Image Captions : image-captions
+- [ ] The One Ring 2E Statblocks : tor2e-statblocks
+- [ ] Reference Map : reference-map
+- [ ] Khoj : khoj
+- [ ] Custom File Extensions and Types : obsidian-custom-file-extensions-plugin
+- [ ] Incremental ID : incremental-id
+- [ ] Canvas Mindmap : canvas-mindmap
+- [ ] Link Exploder : link-exploder
+- [ ] Cycle In Sidebar : cycle-in-sidebar
+- [ ] Adamantine Pick : adamantine-pick
+- [ ] Antidote Grammar Checker Integration : antidote-grammar-checker-integration
+- [ ] S3 Image Uploader : s3-image-uploader
+- [ ] Canvas Filter : canvas-filter
+- [ ] Note aliases : note-aliases
+- [ ] Text Wrapper : obs-text-wrapper
+- [ ] Kill and Yank : kill-and-yank
+- [ ] Double Colon Conceal : double-colon-conceal
+- [ ] 🪝 Grappling Hook : grappling-hook
+- [ ] Tag Search : tag-search
+- [ ] YTranscript : ytranscript
+- [ ] Habit Calendar : habit-calendar
+- [ ] Console Markdown Plugin : console
+- [ ] Quip : quip
+- [ ] Custom Classes : custom-classes
+- [ ] Babashka : babashka
+- [ ] DMN Eval : dmn-eval
+- [ ] Restore Tab Key : restore-tab-key
+- [ ] Omnivore : obsidian-omnivore
+- [ ] Inbox : inbox
+- [ ] Text Progress Bar : text-progress-bar
+- [ ] Reading comments : reading-comments
+- [ ] ProgressBar : progressbar
+- [ ] Kindle CSV Converter : kindle-csv-converter
+- [ ] Material Symbols : material-symbols
+- [ ] Unicode Search : unicode-search
+- [ ] Awesome Reader : awesome-reader
+- [ ] LaTeX Algorithms : latex-algorithms
+- [ ] Contextual Comments : contextual-comments
+- [ ] Heading Level Indent : heading-level-indent
+- [ ] Open files with commands : open-files-with-commands
+- [ ] No Empty Windows : no-empty-windows
+- [ ] Marp : marp
+- [ ] O2 : o2
+- [ ] Close Similar Tabs : close-similar-tabs
+- [ ] Create Note in Folder : create-note-in-folder
+- [ ] Apple Books Highlights : apple-books-highlights
+- [ ] MSG Handler : msg-handler
+- [ ] ObsiDOOM : obsidoom
+- [ ] Advanced Paste : advanced-paste
+- [ ] ActivityWatch : aw-watcher-obsidian
+- [ ] Mixa : mixa
+- [ ] Vextab : vextab
+- [ ] Callout Manager : callout-manager
+- [ ] Awesome Image : awesome-image
+- [ ] Callout Integrator : callout-integrator
+- [ ] Emoji Magic : emoji-magic
+- [ ] Optimize Canvas Connections : optimize-canvas-connections
+- [ ] Home tab : home-tab
+- [ ] ChatGPT MD : chatgpt-md
+- [ ] OpenWeather : open-weather
+- [ ] Emoji Titler : emoji-titler
+- [ ] Perilous Writing : perilous-writing
+- [ ] ibook : ibook
+- [ ] Floating Highlights : floating-highlights
+- [ ] Zen : zen
+- [ ] Fast Image Cleaner : nl-fast-image-cleaner
+- [ ] Fantasy Content Generator : fantasy-content-generator
+- [ ] Tasks Calendar Wrapper : tasks-calendar-wrapper
+- [ ] Awesome Brain Manager : awesome-brain-manager
+- [ ] Open In New Tab : open-in-new-tab
+- [ ] Commando : commando-command-repeater
+- [ ] File Publisher : file-publisher
+- [ ] Global Search and Replace : global-search-and-replace
+- [ ] Image Upload Toolkit : image-upload-toolkit
+- [ ] Gene 🧬 : gene-ai
+- [ ] LaTeX to Unicode converter : latex-to-unicode
+- [ ] Natural Language Syntax Highlighting : nl-syntax-highlighting
+- [ ] Focus Active Sentence : focus-active-sentence
+- [ ] Journal Review : journal-review
+- [ ] Brainframe : brainframe
+- [ ] Gemmy : gemmy
+- [ ] Source Code Note : source-code-note
+- [ ] Jelly Snippets : jelly-snippets
+- [ ] Prioritize : prioritize
+- [ ] Import/Export TiddlyWiki : tiddlywiki-import-export
+- [ ] Reveal file in explorer : reveal-file-in-explorer
+- [ ] Floating Search : float-search
+- [ ] Avatar : avatar
+- [ ] Meld Build : meld-build
+- [ ] Page Properties : page-properties
+- [ ] Testing Vault : testing-vault
+- [ ] Easy toggle sidebars : easy-toggle-sidebars
+- [ ] x86 Assembly Flow Graphing : x86-flow-graphing
+- [ ] Search Obsidian in Google : search-obsidian-in-google
+- [ ] OZ Calendar : oz-calendar
+- [ ] Send Tasks to OmniFocus : tasks-to-omnifocus
+- [ ] AI Commander : ai-commander
+- [ ] Pseudocode : pseudocode-in-obs
+- [ ] Advanced Merger : advanced-merger
+- [ ] Unfilled Stats Highlighter : unfilled-stats-highlighter
+- [ ] GPT Assistant : gpt-assistant
+- [ ] Companion : companion
+- [ ] Get Stock Information : get-stock-information
+- [ ] Frontmatter Alias Display : frontmatter-alias-display
+- [ ] Character Insertion : character-insertion
+- [ ] Whisper : whisper
+- [ ] Colorful Note Borders : colorful-note-borders
+- [ ] Code Files : code-files
+- [ ] Flashcard Learning : flashcard-learning
+- [ ] Any Block : any-block
+- [ ] WuCai highlights Official : wucai-highlights-official
+- [ ] File Order : file-order
+- [ ] No Tabs : no-tabs
+- [ ] Tab Rotator : tab-rotator
+- [ ] Bulk open selected links : bulkopen-selected-links
+- [ ] Semantic Search : bbawj-semantic-search
+- [ ] Select current line : select-current-line
+- [ ] Wikipedia Search : wikipedia-search
+- [ ] Vim Toggle : vim-toggle
+- [ ] Draw Harada Method : draw-harada-method
+- [ ] Marp Slides : marp-slides
+- [ ] Flomo Importer : flomo-importer
+- [ ] Tolino notes Importer : tolino-notes-import
+- [ ] Codeblock Customizer : codeblock-customizer
+- [ ] Auto Classifier : auto-classifier
+- [ ] AI Assistant : ai-assistant
+- [ ] Cron : cron
+- [ ] Tray : tray
+- [ ] Dynamic Timetable : dynamic-timetable
+- [ ] Soomda : obsidian-soomda
+- [ ] Vault name in status bar : vault-name-status-bar
+- [ ] Quickly : quickly
+- [ ] HK Code Block : hk-code-block
+- [ ] Tistory Poster : tistory-poster
+- [ ] Link Range : link-range
+- [ ] Ring a secretary : ring-a-secretary
+- [ ] Latex Matrices : latex-matrices
+- [ ] Smart Rename : smart-rename
+- [ ] Folder notes : folder-notes
+- [ ] Pocketbook Cloud Highlight Importer : pocketbook-cloud-highlight-importer
+- [ ] Pivotal Tracker Integration : pivotal-tracker-integration
+- [ ] File Diff : file-diff
+- [ ] text2anki-openai : text2anki-openai
+- [ ] Ultimate Todoist Sync : ultimate-todoist-sync
+- [ ] Reading View Enhancer : reading-view-enhancer
+- [ ] Crossbow : crossbow
+- [ ] Google Keep Import : google-keep-import
+- [ ] Image OCR : image-ocr
+- [ ] GPT-LiteInquirer : gpt-liteinquirer
+- [ ] Loom : loom
+- [ ] Links : links
+- [ ] Confluence Integration : confluence-integration
+- [ ] Copilot : copilot
+- [ ] GitHub Issue Augmentation : github-issue-augmentation
+- [ ] Persistent Links : persistent-links
+- [ ] Personal Assistant : personal-assistant
+- [ ] April's Automatic Timelines : aprils-automatic-timelines
+- [ ] AI Mentor : ai-mentor
+- [ ] Game Search : game-search
+- [ ] Linked Data Vocabularies : linked-data-vocabularies
+- [ ] Linked Data Helper : linked-data-helper
+- [ ] Show Diff : show-diff
+- [ ] Markdoc : markdoc
+- [ ] Colored Text : colored-text
+- [ ] Slide Note : slide-note
+- [ ] Chem : chem
+- [ ] Last Modified Timestamp in Status Bar : last-modified-timestamp-in-status-bar
+- [ ] Askify Sync : askify-obsidian-sync
+- [ ] Android nomedia : android-nomedia
+- [ ] Custom State for Task List : custom-state-for-task-list
+- [ ] Fuzzy Chinese Pinyin : fuzzy-chinese-pinyin
+- [ ] Auto Template Trigger : auto-template-trigger
+- [ ] Ketcher : ketcher
+- [ ] Open Plugin Settings : open-plugin-settings
+- [ ] MathLive : mathlive
+- [ ] Auto Hide Cursor : auto-hide-cursor
+- [ ] PubScale : pubscale
+- [ ] Rofi Helper : rofi-helper
+- [ ] Mood Tracker : mood-tracker
+- [ ] Plugin Manager : plugin-manager
+- [ ] Better MathJax : better-mathjax
+- [ ] Interlinear Glossing : ling-gloss
+- [ ] brAIn : brain
+- [ ] Sync Google Calendar : sync-google-calendar
+- [ ] Share to Cubox : share-to-cubox
+- [ ] Attachment Management : attachment-management
+- [ ] Chess Study : chess-study
+- [ ] Image To Lskypro : lskypro-auto-upload
+- [ ] Dendron Tree : dendron-tree
+- [ ] Silicon AI : silicon
+- [ ] Mermaid.js Helper (OMH) : mermaid-helper
+- [ ] Telegram Sync : telegram-sync
+- [ ] Pieces for Developers : pieces-for-developers
+- [ ] Blur : blur
+- [ ] Canvas Links : canvas-links
+- [ ] HamsterBase Official : hamsterbase
+- [ ] TodoTxt : todotxt
+- [ ] Arcana : arcana
+- [ ] Auto Anki : auto-anki
+- [ ] APIRequest : api-request
+- [ ] Link with alias : link-with-alias
+- [ ] HackerOne : hackerone
+- [ ] Confluence to Obsidian : confluence-to-obsidian
+- [ ] Flashcards LLM : flashcards-llm
+- [ ] Recipe Grabber : recipe-grabber
+- [ ] Note archiver : note-archiver
+- [ ] Iconoir Icons : iconoir-icons
+- [ ] Automatic List Styles : automatic-list-styles
+- [ ] Shukuchi : shukuchi
+- [ ] Chat Stream : chat-stream
+- [ ] BlindFold : blindfold-obsidian
+- [ ] Financial Doc : findoc
+- [ ] File Include : file-include
+- [ ] Vault Chat : vault-chat
+- [ ] Memos Sync : memos-sync
+- [ ] Mermaid Themes : mermaid-themes
+- [ ] Background Image : background-image
+- [ ] Html Server : html-server
+- [ ] Importer : obsidian-importer
+- [ ] Cloudinary : cloudinary
+- [ ] Flowershow : flowershow
+- [ ] Movie : movie-obsidian
+- [ ] Markdown Link Space Encoder : markdown-link-space-encoder
+- [ ] BMO Chatbot : bmo-chatbot
+- [ ] SupSub : supsub
+- [ ] Typst Renderer : typst
+- [ ] AI Notes Summary : ai-summary
+- [ ] Query all the things : qatt
+- [ ] Lilypond : lilypond
+- [ ] Chemical Structure Renderer : chemical-structure-renderer
+- [ ] Time Ruler : time-ruler
+- [ ] Logstravaganza : logstravaganza
+- [ ] Markdown Blogger : markdown-blogger
+- [ ] Simple RSS : simple-rss
+- [ ] Quick Links : quick-links
+- [ ] Editor Width Slider : editor-width-slider
+- [ ] Markdown Tree : markdown-tree
+- [ ] Auto Front Matter : auto-front-matter
+- [ ] EmoTagsTitler : emoji-tags-titler
+- [ ] Advanced Random Note : advanced-random-note
+- [ ] Git Url : git-url
+- [ ] Pathfinder 2E Action Icons : pf2-action-icons
+- [ ] Badges : badges
+- [ ] Readability Score : readability-score
+- [ ] Hide Folders : hide-folders
+- [ ] Style Importer : style-importer
+- [ ] APL Render : apl-render
+- [ ] Add an ID to the front matter : guid-front-matter
+- [ ] Due When : due-when
+- [ ] Style Text : style-text
+- [ ] Notes dater : notes-dater
+- [ ] Air Quotes : air-quotes
+- [ ] Vault 2 Book : vault-2-book
+- [ ] Markdown Chords : markdown-chords
+- [ ] Laws of Form : laws-of-form
+- [ ] Notes Sync Share : notes-sync-share
+- [ ] NAI 4 Obsidian : nai4obsidian
+- [ ] Password Protection : password-protection
+- [ ] LDS Scriptures Reference : lds-scriptures-reference
+- [ ] Edit History : edit-history
+- [ ] Google Bard Assistant : google-bard-assistant
+- [ ] Memorization : memorization
+- [ ] TinyPNG Image : tinypng-image
+- [ ] Code::Stats : codestats
+- [ ] CSS Editor : css-editor
+- [ ] Bulk Exporter : bulk-exporter
+- [ ] Code Styler : code-styler
+- [ ] Auto Hyperlink : auto-hyperlink
+- [ ] Quick Plugin Switcher : quick-plugin-switcher
+- [ ] Colored Tags : colored-tags
+- [ ] Markdown Sync Scroll : markdown-sync-scroll
+- [ ] Ruled template : ruled-template
+- [ ] AI Tools : ai-tools
+- [ ] oblogger : oblogger
+- [ ] Simple CanvaSearch : simple-canvasearch
+- [ ] ZettelGPT : zettelgpt
+- [ ] Invio : invio
+- [ ] Periodic PARA : periodic-para
+- [ ] Source Scanner : source-scanner
+- [ ] Markdown to Slack Message : markdown-to-slack-message
+- [ ] Micro templates : micro-templates
+- [ ] Poker : poker
+- [ ] Color Palette : color-palette
+- [ ] Link Tree : link-tree
+- [ ] Custom list character : custom-list-character
+- [ ] Arrows : arrows
+- [ ] ICS : ics
+- [ ] Fantasy name generator : fantasy-name
+- [ ] TagMany : tag-many
+- [ ] Better Search Views : better-search-views
+- [ ] Dida Todo Sync : dida-sync
+- [ ] Better Comment Toggle : better-comment-toggle
+- [ ] Mini Toolbar : mini-toolbar
+- [ ] SyncFTP : syncftp
+- [ ] Obligator : obligator
+- [ ] Fill in the Blank (FITB) : fill-in-the-blank
+- [ ] InlineCodeHighlight : inline-code-highlight
+- [ ] Index Checker : index-checker
+- [ ] Syncthing Integration : syncthing-integration
+- [ ] RunJS : runjs
+- [ ] Touch Bar Macros : touchbar-macros
+- [ ] Obsidiosaurus : obsidiosaurus
+- [ ] Quail : quail
+- [ ] GTD No Next Step : gtd-no-next-step
+- [ ] Safe Filename Linter : safe-filename-linter
+- [ ] Copy Inline Code : copy-inline-code
+- [ ] At People : at-people
+- [ ] ArchWiki Reader : archwiki-reader
+- [ ] Easy Bake : easy-bake
+- [ ] Yet Another Obsidian Synchronizer : yet-another-obsidian-synchronizer
+- [ ] Finnish Spellcheck : finnish-spellcheck
+- [ ] Execute Python : execute-python
+- [ ] Birthday-Tracker : birthday-tracker
+- [ ] Lovely-Mindmap : lovely-mindmap
+- [ ] LinkShelf : linkshelf
+- [ ] Modules : modules
+- [ ] CodeBlock Tabs : codeblock-tabs
+- [ ] MDX : mdx
+- [ ] Emacs text editor : emacs-text-editor
+- [ ] Waka time box : waka_time_box
+- [ ] Codename : codename
+- [ ] Speech To Text Keyboard Helper : speech2text-helper
+- [ ] Uncheck All : uncheck-all
+- [ ] Voice : voice
+- [ ] Cloze : cloze
+- [ ] Wikidata Importer : wikidata-importer
+- [ ] Copilot auto completion : copilot-auto-completion
+- [ ] Unitade : unitade
+- [ ] Python Scripter : python-scripter
+- [ ] Quick note : quicknote
+- [ ] Update frontmatter modified date : frontmatter-modified-date
+- [ ] Multi Tag : multi-tag
+- [ ] Zettelkasten LLM Tools : zettelkasten-llm-tools
+- [ ] Reflection : reflection
+- [ ] AI Research Assistant : ai-research-assistant
+- [ ] Wallabag : wallabag
+- [ ] Red Pen : red-pen
+- [ ] Zotero Sync : zotero-sync-client
+- [ ] Harpoon : harpoon
+- [ ] Nostr Writer : nostr-writer
+- [ ] Image Converter : image-converter
+- [ ] Data Entry : data-entry
+- [ ] @ Symbol Linking : at-symbol-linking
+- [ ] Attachment Manager : attachment-manager
+- [ ] Solve : solve
+- [ ] Nested tags graph : graph-nested-tags
+- [ ] YouVersion Linker : youversion-linker
+- [ ] Checkbox Reorder : checkbox-reorder
+- [ ] Gnome Terminal Loader : gnome-terminal-loader
+- [ ] Media Sync : media-sync
+- [ ] autoLiterature : auto-literature
+- [ ] Local Backup : local-backup
+- [ ] ChatGPT Definition : chatgpt-definitions
+- [ ] Postfix : postfix
+- [ ] Typing Assistant : typing-assistant
+- [ ] Excalidraw CN : excalidraw-cn
+- [ ] BattleSnake Board Viewer : battlesnake-viewer
+- [ ] MTG Card Links : mtg-card-links
+- [ ] Floccus Bookmarks to Markdown : floccus-bookmarks-to-markdown
+- [ ] Writeas Blog Publisher : writeas-publisher
+- [ ] Header Enhancer : header-enhancer
+- [ ] MLIR Syntax Highlight : mlir-syntax-highlight
+- [ ] Handwritten Notes : handwritten-notes
+- [ ] Flashcard Generator : flashcard-gen
+- [ ] Spreadsheets : spreadsheets
+- [ ] TickTick : ticktick
+- [ ] Webdav File Explorer : webdav-file-explorer
+- [ ] Sheets Extended : sheets
+- [ ] Auto Journal : auto-journal
+- [ ] Nifty Links : nifty-links
+- [ ] Exercises : exercises
+- [ ] Math Booster : math-booster
+- [ ] File Explorer++ : file-explorer-plus
+- [ ] Vox : vox
+- [ ] GitHub Embeds : github-embeds
+- [ ] Tenki : tenki
+- [ ] Tokei : tokei
+- [ ] Codeblock Template : codeblock-template
+- [ ] 2Hop Links Plus : 2hop-links-plus
+- [ ] Custom Font Loader : custom-font-loader
+- [ ] Pickly PageBlend : pickly-page-blend
+- [ ] AI Editor : ai-editor
+- [ ] Workbooks : workbooks
+- [ ] Day Planner (OG) : day-planner-og
