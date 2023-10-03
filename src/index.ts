@@ -62,7 +62,7 @@ async function main() {
 
 	spinner.start(chalk.yellow("Fetching plugins list, manifest and commits..."));
 	const allPlugins = await getRawData(octokit, commitFromDB, maxLength);
-	spinner.succeed(chalk.green(`Plugins list fetched! ${allPlugins.length} plugins found.`));
+	spinner.succeed(chalk.green(`Plugins list fetched in ${calcTimeScript(startTime, Date.now())}! ${allPlugins.length} plugins found.`));
 	if (test) {
 		console.log(`${chalk.blueBright.italic.underline(`Adding test plugin ${TEST_PLUGIN.name} (${chalk.underline(TEST_PLUGIN.id)}) to the list...`)}\n`);
 		allPlugins.push(TEST_PLUGIN);
@@ -93,8 +93,7 @@ async function main() {
 	} else {
 		spinner.fail(chalk.gray("No deleted plugins found."));
 	}
-	const endTime = Date.now();
-	const elapsedTime = calcTimeScript(startTime, endTime);
+	const elapsedTime = calcTimeScript(startTime, Date.now());
 	console.log();
 	console.log(chalk.green(`Script executed in ${elapsedTime}`));
 
