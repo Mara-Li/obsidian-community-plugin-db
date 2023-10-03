@@ -398,13 +398,13 @@
 - [x] vim-im-select
 - [x] obsidian-emotion-picker
 - [x] quoth
-- [ ] obsidian-metronome-plugin
-- [ ] obsidian-plaintext
-- [ ] obsidian-wrap-with-shortcuts
-- [ ] obsidian-tomorrows-daily-note
-- [ ] obsidian-rant
-- [ ] obsidian-smarter-md-hotkeys
-- [ ] obsidian-global-hotkeys
+- [x] obsidian-metronome-plugin
+- [x] obsidian-plaintext
+- [x] obsidian-wrap-with-shortcuts
+- [x] obsidian-tomorrows-daily-note
+- [x] obsidian-rant
+- [x] obsidian-smarter-md-hotkeys
+- [x] obsidian-global-hotkeys
 - [ ] obsidian-timestamper
 - [ ] obsidian-import-json
 - [ ] import-foundry
