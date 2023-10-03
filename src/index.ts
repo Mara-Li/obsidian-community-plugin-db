@@ -10,6 +10,7 @@ import { updateOldEntry } from "./database/update";
 import { deletePageID } from "./delete";
 import { getRawData } from "./getPlugins";
 import { PluginCommitDate, TEST_PLUGIN } from "./interface";
+import { calcTimeScript } from "./utils";
 
 
 config();
@@ -21,6 +22,8 @@ async function main() {
 	const octokit = new Octokit({
 		auth: process.env.GITHUB_TOKEN_API,
 	});
+
+	const startTime = Date.now();
 
 	const notion = new Client({
 		auth: process.env.NOTION_TOKEN,
@@ -90,6 +93,11 @@ async function main() {
 	} else {
 		spinner.fail(chalk.gray("No deleted plugins found."));
 	}
+	const endTime = Date.now();
+	const elapsedTime = calcTimeScript(startTime, endTime);
+	console.log();
+	console.log(chalk.green(`Script executed in ${elapsedTime}`));
+
 }
 
 await main();

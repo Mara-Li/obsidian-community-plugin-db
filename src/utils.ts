@@ -125,3 +125,18 @@ export function uniDate(date: Date | string | undefined) {
 	}
 	return format(date, "yyyy-MM-dd'T'HH:mm");
 }
+
+export function calcTimeScript(start: number, end: number) {
+	const elapsedTime = end - start;
+	const hour = Math.floor(elapsedTime / 3600000);
+	const min = Math.floor((elapsedTime - hour * 3600000) / 60000);
+	const sec = Math.floor((elapsedTime - hour * 3600000 - min * 60000) / 1000);
+
+	if (hour > 0) {
+		return `${hour}h${min}m${sec}s`;
+	} else if (min > 0) {
+		return `${min}m${sec}s`;
+	} else {
+		return `${sec}s`;
+	}
+}
