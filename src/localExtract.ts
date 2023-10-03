@@ -9,8 +9,6 @@ import {join} from "path";
 
 import { PluginItems } from "./interface";
 
-
-
 async function getCommunityList(length?: number) {
 	const url = "https://raw.githubusercontent.com/obsidianmd/obsidian-releases/master/community-plugins.json";
 	const content = await fetch(url);
@@ -19,7 +17,7 @@ async function getCommunityList(length?: number) {
 		data = data.slice(0, length);
 	}
 	/** convert data into markdown list using - plugin.name : plugin.id */
-	const markdownList = data.map((plugin) => `${plugin.name} : ${plugin.id}`);
+	const markdownList = data.map((plugin) => `${plugin.id}`);
 	/** Add the markdown list into a markdown file */
 	const file = join(__dirname, "localExtract.md");
 	console.log(`Writing to ${file}`);
@@ -37,15 +35,13 @@ async function getCommunityList(length?: number) {
 			return;
 		}
 
-		const newContent = `${oldList.join("\n")}- [ ] ${newList.join("\n- [ ] ")}`;
+		const newContent = `${oldList.join("\n")}\n- [ ] ${newList.join("\n- [ ] ")}`;
 		console.log(`Extracted ${newList.length} new plugins.`);
 		writeFileSync(file, newContent);
 	} else {
 		writeFileSync(file, markdownList.join("\n"));
 		console.log(`Extracted ${data.length} plugins.`);
-
 	}
-
 }
 
 await getCommunityList();
