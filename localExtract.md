@@ -405,99 +405,99 @@
 - [x] obsidian-rant
 - [x] obsidian-smarter-md-hotkeys
 - [x] obsidian-global-hotkeys
-- [ ] obsidian-timestamper
-- [ ] obsidian-import-json
-- [ ] import-foundry
-- [ ] obsidian-attachment-name-formatting
-- [ ] obsidian-completr
-- [ ] obsidian-binary-file-manager-plugin
-- [ ] obsidian-local-file-interface-plugin
-- [ ] obsidian-siteswap
-- [ ] obsidian-tweaks
-- [ ] obsidian-memos
-- [ ] para-shortcuts
-- [ ] 13th-age-statblocks
-- [ ] obsidian-dynamic-highlights
-- [ ] obsidian-koreader-plugin
-- [ ] obsidian-snippetor
-- [ ] obsidian-sortable
-- [ ] weather-fetcher
-- [ ] obsidian-lock-screen-plugin
-- [ ] pinboard-sync
-- [ ] obsidian-shortcut-launcher
-- [ ] obsidian-file-info-plugin
-- [ ] obsidian-topic-linking
-- [ ] multi-column-markdown
-- [ ] copy-as-html
-- [ ] obsidian-frontmatter-tag-suggest
-- [ ] simple-note-quiz
-- [ ] obsidian-local-rest-api
-- [ ] obsidian-codeblock-labels
-- [ ] obsidian-better-command-palette
-- [ ] obsidian-relativenumber
-- [ ] obsidian-core-search-assistant-plugin
-- [ ] obsidian-save-as-gist
-- [ ] obsidian-divide-and-conquer
-- [ ] obsidian-excel-to-markdown-table
-- [ ] obsidian-power-search
-- [ ] tag-word-cloud
-- [ ] persistent-graph
-- [ ] auto-note-mover
-- [ ] insert-heading-link
-- [ ] settings-search
-- [ ] japanese-word-splitter
-- [ ] alx-folder-note-folderv
-- [ ] obsidian-chevereto-image-uploader
-- [ ] todoist-text
-- [ ] big-calendar
-- [ ] obsidian-command-palette-minus-plugin
-- [ ] obsidian-remember-file-state
-- [ ] obsidian-things-link
-- [ ] markdown-shortcuts
-- [ ] digitalgarden
-- [ ] obsidian-living-graph
-- [ ] obsidian-hotkeys-chords
-- [ ] obsidian-key-sequence-shortcut
-- [ ] obsidian-full-calendar
-- [ ] heatmap-calendar
-- [ ] obsidian-daily-notes-opener
-- [ ] obsidian-mark-and-select
-- [ ] obsidian-bible-linker
-- [ ] obsidian-circuitjs
-- [ ] creases
-- [ ] obsidian-kobo-highlights-importer-plugin
-- [ ] obsidian-dynamic-embed
-- [ ] obsidian-steemit
-- [ ] obsidian-kindle-export
-- [ ] obsidian-search-everywhere-plugin
-- [ ] obsidian-textgenerator-plugin
-- [ ] markdown-table-editor
-- [ ] obsidian-vim-multibyte-char-search
-- [ ] obsidian-extract-pdf-annotations
-- [ ] obsidian-file-cleaner
-- [ ] obsidian-card-view-switcher-plugin
-- [ ] novel-word-count
-- [ ] heycalmdown-navigate-cursor-history
-- [ ] obsidian-matrix
-- [ ] waypoint
-- [ ] obsidian-hover-editor
-- [ ] obsidian-screwdriver
-- [ ] obsidian-version-history-diff
-- [ ] obsidian-format-code
-- [ ] obsidian-buttondown-plugin
-- [ ] lapel
-- [ ] obsidian-desmos
-- [ ] obsidian-custom-frames
-- [ ] obsidian-etherpad-plugin
-- [ ] obsidian-quiet-outline
-- [ ] obsidian-daily-notes-viewer
-- [ ] obsidian-zotero-desktop-connector
-- [ ] obsidian-telegraph-publish
-- [ ] obsidian-path-title
-- [ ] obsidian-jira-issue
-- [ ] smort-obsidian
-- [ ] control-characters
-- [ ] obsidian-asciidoc-blocks
+- [x] obsidian-timestamper
+- [x] obsidian-import-json
+- [x] import-foundry
+- [x] obsidian-attachment-name-formatting
+- [x] obsidian-completr
+- [x] obsidian-binary-file-manager-plugin
+- [x] obsidian-local-file-interface-plugin
+- [x] obsidian-siteswap
+- [x] obsidian-tweaks
+- [x] obsidian-memos
+- [x] para-shortcuts
+- [x] 13th-age-statblocks
+- [x] obsidian-dynamic-highlights
+- [x] obsidian-koreader-plugin
+- [x] obsidian-snippetor
+- [x] obsidian-sortable
+- [x] weather-fetcher
+- [x] obsidian-lock-screen-plugin
+- [x] pinboard-sync
+- [x] obsidian-shortcut-launcher
+- [x] obsidian-file-info-plugin
+- [x] obsidian-topic-linking
+- [x] multi-column-markdown
+- [x] copy-as-html
+- [x] obsidian-frontmatter-tag-suggest
+- [x] simple-note-quiz
+- [x] obsidian-local-rest-api
+- [x] obsidian-codeblock-labels
+- [x] obsidian-better-command-palette
+- [x] obsidian-relativenumber
+- [x] obsidian-core-search-assistant-plugin
+- [x] obsidian-save-as-gist
+- [x] obsidian-divide-and-conquer
+- [x] obsidian-excel-to-markdown-table
+- [x] obsidian-power-search
+- [x] tag-word-cloud
+- [x] persistent-graph
+- [x] auto-note-mover
+- [x] insert-heading-link
+- [x] settings-search
+- [x] japanese-word-splitter
+- [x] alx-folder-note-folderv
+- [x] obsidian-chevereto-image-uploader
+- [x] todoist-text
+- [x] big-calendar
+- [x] obsidian-command-palette-minus-plugin
+- [x] obsidian-remember-file-state
+- [x] obsidian-things-link
+- [x] markdown-shortcuts
+- [x] digitalgarden
+- [x] obsidian-living-graph
+- [x] obsidian-hotkeys-chords
+- [x] obsidian-key-sequence-shortcut
+- [x] obsidian-full-calendar
+- [x] heatmap-calendar
+- [x] obsidian-daily-notes-opener
+- [x] obsidian-mark-and-select
+- [x] obsidian-bible-linker
+- [x] obsidian-circuitjs
+- [x] creases
+- [x] obsidian-kobo-highlights-importer-plugin
+- [x] obsidian-dynamic-embed
+- [x] obsidian-steemit
+- [x] obsidian-kindle-export
+- [x] obsidian-search-everywhere-plugin
+- [x] obsidian-textgenerator-plugin
+- [x] markdown-table-editor
+- [x] obsidian-vim-multibyte-char-search
+- [x] obsidian-extract-pdf-annotations
+- [x] obsidian-file-cleaner
+- [x] obsidian-card-view-switcher-plugin
+- [x] novel-word-count
+- [x] heycalmdown-navigate-cursor-history
+- [x] obsidian-matrix
+- [x] waypoint
+- [x] obsidian-hover-editor
+- [x] obsidian-screwdriver
+- [x] obsidian-version-history-diff
+- [x] obsidian-format-code
+- [x] obsidian-buttondown-plugin
+- [x] lapel
+- [x] obsidian-desmos
+- [x] obsidian-custom-frames
+- [x] obsidian-etherpad-plugin
+- [x] obsidian-quiet-outline
+- [x] obsidian-daily-notes-viewer
+- [x] obsidian-zotero-desktop-connector
+- [x] obsidian-telegraph-publish
+- [x] obsidian-path-title
+- [x] obsidian-jira-issue
+- [x] smort-obsidian
+- [x] control-characters
+- [x] obsidian-asciidoc-blocks
 - [ ] fleeting-notes-obsidian
 - [ ] obsidian-chat-view
 - [ ] obsidian-doubleshift
